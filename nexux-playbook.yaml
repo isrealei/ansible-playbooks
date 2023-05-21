@@ -1,0 +1,43 @@
+---
+- name: install java and net-tools
+  hosts: droplet_websrvers
+  tasks:
+  - name: Update reposistory
+    apt: cache_valid_time=3600 update_cache=yes force_apt_get=yes
+
+  - name: Java 8 installation
+    apt:
+     name:
+      - openjdk-8-jre-headless
+      - net-tools
+
+- name: changing directory and downloading nexus installer
+  hosts: droplet_websrvers
+  tasks:
+  - name: Download Nexus
+    get_url:
+      url: https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+      dest: /opt
+      mode: '0440'
+    register: download_result
+
+
+  - name: Untar Nexus installer
+    unarchive:
+     src: "{{download_result.dest}}"
+     dest: /opt/
+     remote_src: true
+
+  - name: find nexus folder
+    find: 
+      paths:
+        - /opt/
+      pattern: "nexus-*"
+      file_type: directory
+    register: find_result
+
+      
+
+  - name: rename nexus folder 
+    shell: mv {{find_result.files[0].path}} /opt/nexus
+  

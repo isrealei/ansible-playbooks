@@ -1,0 +1,19 @@
+---
+- name: Configure Nginx Web Server
+  hosts: droplet_websrvers
+  tasks:
+
+  - name: install nginx server
+    apt:
+      name: nginx
+      state: absent
+
+  - name: start the nginx service
+    service: 
+      name: nginx 
+      state: stopped 
+
+  - name: enable webserver
+    service: 
+      name: nginx
+      enabled: yes

@@ -1,0 +1,77 @@
+---
+- name: Installing app dependecies via npm
+  hosts: linodes
+  tasks: 
+  - name: Update apt repo and catch
+    apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+    
+  - name: Install nodejs and npm
+    apt:
+      pkg:
+      - npm
+      - nodejs
+
+- name: create new user 
+  hosts: linodes
+  tasks: 
+  - name: Create new linus user
+    ansible.builtin.user:
+      name: isreal
+      comment: isreal admin
+    register: user_creation
+  
+  - debug:
+     var: user_creation
+      
+
+
+- name: Deploying node-js application
+  hosts: linodes
+  become: true
+  become_user: isreal
+  vars_files:
+  - project-vars
+ 
+  tasks:   
+  # - name: copy nodejs folder to my server
+  #   copy:
+  #     src: /Users/isrealurephu/bootcamp-projects/simple-nodejs/nodejs-app-1.0.0.tgz
+  #     dest: /root/app-1.0.0.tgz
+
+  - name: unpack the nodejs tar file
+    ansible.builtin.unarchive:
+      src: "{{location}}/nodejs-app-{{version}}.tgz"
+      dest: "{{destination}}"
+    register: unpacking
+    
+  - debug:
+      var: unpacking
+
+
+  - name: install npm dependecies
+    npm: 
+      path: "{{destination}}/package"
+
+  - name: Start the application
+    command: 
+      chdir: "{{destination}}/package/app"
+      cmd: node server
+    async: 1000
+    poll: 0
+  
+  - name: Ensure app is running
+    shell: ps aux | grep node
+    register: app_status
+
+  - name: print application app_status
+    ansible.builtin.debug:
+      var: app_status.stdout_lines
+
+  
+    
+
+
+
+
+      
+      

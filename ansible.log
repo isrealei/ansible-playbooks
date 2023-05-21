@@ -1,0 +1,1277 @@
+2023-05-21 12:48:13,046 p=24935 u=isrealurephu n=ansible | PLAY [Configure Nginx Web Server] *************************************************************
+2023-05-21 12:48:13,052 p=24935 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************
+2023-05-21 12:48:17,145 p=24935 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 12:48:17,668 p=24935 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 12:48:17,690 p=24935 u=isrealurephu n=ansible | TASK [install nginx server] *******************************************************************
+2023-05-21 12:48:37,515 p=24935 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 12:48:45,307 p=24935 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 12:48:45,323 p=24935 u=isrealurephu n=ansible | TASK [start the nginx service] ****************************************************************
+2023-05-21 12:48:47,591 p=24935 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 12:48:47,864 p=24935 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 12:48:47,879 p=24935 u=isrealurephu n=ansible | TASK [enable webserver] ***********************************************************************
+2023-05-21 12:48:49,702 p=24935 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 12:48:50,018 p=24935 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 12:48:50,062 p=24935 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************
+2023-05-21 12:48:50,062 p=24935 u=isrealurephu n=ansible | 209.38.196.182             : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 12:48:50,062 p=24935 u=isrealurephu n=ansible | 209.38.196.186             : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 12:53:44,913 p=25419 u=isrealurephu n=ansible | PLAY [Configure Nginx Web Server] *******************************************************************
+2023-05-21 12:53:44,919 p=25419 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 12:53:48,978 p=25419 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 12:53:50,666 p=25419 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 12:53:50,688 p=25419 u=isrealurephu n=ansible | TASK [install nginx server] *************************************************************************
+2023-05-21 12:53:52,912 p=25419 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 12:53:53,715 p=25419 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 12:53:53,725 p=25419 u=isrealurephu n=ansible | TASK [start the nginx service] **********************************************************************
+2023-05-21 12:53:55,866 p=25419 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 12:53:55,867 p=25419 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 12:53:55,873 p=25419 u=isrealurephu n=ansible | TASK [enable webserver] *****************************************************************************
+2023-05-21 12:53:57,979 p=25419 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 12:53:58,056 p=25419 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 12:53:58,080 p=25419 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 12:53:58,080 p=25419 u=isrealurephu n=ansible | 209.38.196.182             : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 12:53:58,080 p=25419 u=isrealurephu n=ansible | 209.38.196.186             : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 12:55:36,036 p=25662 u=isrealurephu n=ansible | PLAY [Configure Nginx Web Server] *******************************************************************
+2023-05-21 12:55:36,042 p=25662 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 12:55:39,647 p=25662 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 12:55:40,320 p=25662 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 12:55:40,347 p=25662 u=isrealurephu n=ansible | TASK [install nginx server] *************************************************************************
+2023-05-21 12:55:45,335 p=25662 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 12:55:47,254 p=25662 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 12:55:47,260 p=25662 u=isrealurephu n=ansible | TASK [start the nginx service] **********************************************************************
+2023-05-21 12:55:49,147 p=25662 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 12:55:49,502 p=25662 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 12:55:49,512 p=25662 u=isrealurephu n=ansible | TASK [enable webserver] *****************************************************************************
+2023-05-21 12:55:51,355 p=25662 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 12:55:51,628 p=25662 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 12:55:51,664 p=25662 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 12:55:51,664 p=25662 u=isrealurephu n=ansible | 209.38.196.182             : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 12:55:51,664 p=25662 u=isrealurephu n=ansible | 209.38.196.186             : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | # /opt/homebrew/Cellar/ansible/7.5.0/libexec/lib/python3.11/site-packages/ansible_collections
+Collection                    Version
+----------------------------- -------
+
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | amazon.aws                    5.4.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | ansible.netcommon             4.1.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | ansible.posix                 1.5.2  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | ansible.utils                 2.9.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | ansible.windows               1.13.0 
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | arista.eos                    6.0.1  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | awx.awx                       21.14.0
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | azure.azcollection            1.15.0 
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | check_point.mgmt              4.0.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | chocolatey.chocolatey         1.4.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.aci                     2.6.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.asa                     4.0.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.dnac                    6.7.1  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.intersight              1.0.27 
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.ios                     4.5.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.iosxr                   4.1.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.ise                     2.5.12 
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.meraki                  2.15.1 
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.mso                     2.4.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.nso                     1.0.3  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.nxos                    4.3.0  
+2023-05-21 13:10:03,972 p=26643 u=isrealurephu n=ansible | cisco.ucs                     1.8.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | cloud.common                  2.1.3  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | cloudscale_ch.cloud           2.2.4  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.aws                 5.4.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.azure               2.0.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.ciscosmb            1.0.5  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.crypto              2.12.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.digitalocean        1.23.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.dns                 2.5.3  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.docker              3.4.3  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.fortios             1.0.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.general             6.6.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.google              1.0.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.grafana             1.5.4  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.hashi_vault         4.2.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.hrobot              1.8.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.libvirt             1.2.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.mongodb             1.5.2  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.mysql               3.6.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.network             5.0.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.okd                 2.3.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.postgresql          2.3.2  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.proxysql            1.5.1  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.rabbitmq            1.2.3  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.routeros            2.8.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.sap                 1.0.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.sap_libs            1.4.1  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.skydive             1.0.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.sops                1.6.1  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.vmware              3.5.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.windows             1.12.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | community.zabbix              1.9.3  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | containers.podman             1.10.1 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | cyberark.conjur               1.2.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | cyberark.pas                  1.0.17 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | dellemc.enterprise_sonic      2.0.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | dellemc.openmanage            6.3.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | dellemc.os10                  1.1.1  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | dellemc.os6                   1.0.7  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | dellemc.os9                   1.0.4  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | dellemc.powerflex             1.6.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | dellemc.unity                 1.6.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | f5networks.f5_modules         1.23.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | fortinet.fortimanager         2.1.7  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | fortinet.fortios              2.2.3  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | frr.frr                       2.0.2  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | gluster.gluster               1.0.2  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | google.cloud                  1.1.3  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | grafana.grafana               1.1.1  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | hetzner.hcloud                1.11.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | hpe.nimble                    1.1.4  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | ibm.qradar                    2.1.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | ibm.spectrum_virtualize       1.11.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | infinidat.infinibox           1.3.12 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | infoblox.nios_modules         1.4.1  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | inspur.ispim                  1.3.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | inspur.sm                     2.3.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | junipernetworks.junos         4.1.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | kubernetes.core               2.4.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | lowlydba.sqlserver            1.3.1  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | mellanox.onyx                 1.0.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | microsoft.ad                  1.0.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | netapp.aws                    21.7.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | netapp.azure                  21.10.0
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | netapp.cloudmanager           21.22.0
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | netapp.elementsw              21.7.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | netapp.ontap                  22.5.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | netapp.storagegrid            21.11.1
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | netapp.um_info                21.8.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | netapp_eseries.santricity     1.4.0  
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | netbox.netbox                 3.12.0 
+2023-05-21 13:10:03,973 p=26643 u=isrealurephu n=ansible | ngine_io.cloudstack           2.3.0  
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | ngine_io.exoscale             1.0.0  
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | ngine_io.vultr                1.1.3  
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | openstack.cloud               1.10.0 
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | openvswitch.openvswitch       2.1.0  
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | ovirt.ovirt                   2.4.1  
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | purestorage.flasharray        1.17.2 
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | purestorage.flashblade        1.11.0 
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | purestorage.fusion            1.4.2  
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | sensu.sensu_go                1.13.2 
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | splunk.es                     2.1.0  
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | t_systems_mms.icinga_director 1.32.2 
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | theforeman.foreman            3.10.0 
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | vmware.vmware_rest            2.3.1  
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | vultr.cloud                   1.7.0  
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | vyos.vyos                     4.0.2  
+2023-05-21 13:10:03,974 p=26643 u=isrealurephu n=ansible | wti.remote                    1.0.4  
+2023-05-21 13:44:21,947 p=29018 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 13:44:21,953 p=29018 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 13:44:25,057 p=29018 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 13:44:25,068 p=29018 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 13:44:31,642 p=29018 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 13:44:31,649 p=29018 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 13:46:59,356 p=29018 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 13:46:59,369 p=29018 u=isrealurephu n=ansible | PLAY [Deploying node-js application] ****************************************************************
+2023-05-21 13:46:59,372 p=29018 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 13:47:00,860 p=29018 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 13:47:00,877 p=29018 u=isrealurephu n=ansible | TASK [copy nodejs folder to my server] **************************************************************
+2023-05-21 13:47:02,676 p=29018 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 13:47:02,685 p=29018 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *******************************************************************
+2023-05-21 13:47:04,335 p=29018 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 13:47:04,351 p=29018 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 13:47:04,351 p=29018 u=isrealurephu n=ansible | 139.162.242.60             : ok=6    changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 13:50:27,017 p=29516 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 13:50:27,023 p=29516 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 13:50:29,695 p=29516 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 13:50:29,705 p=29516 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 13:50:31,529 p=29516 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 13:50:31,539 p=29516 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 13:50:33,397 p=29516 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 13:50:33,419 p=29516 u=isrealurephu n=ansible | PLAY [Deploying node-js application] ****************************************************************
+2023-05-21 13:50:33,425 p=29516 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 13:50:35,093 p=29516 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 13:50:35,110 p=29516 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *******************************************************************
+2023-05-21 13:50:37,502 p=29516 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 13:50:37,523 p=29516 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 13:50:37,523 p=29516 u=isrealurephu n=ansible | 139.162.242.60             : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 14:29:07,606 p=32427 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] **************************************************************************************************
+2023-05-21 14:29:07,611 p=32427 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 14:29:20,990 p=32427 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 14:29:21,005 p=32427 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ***********************************************************************************************************
+2023-05-21 14:29:31,562 p=32427 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 14:29:31,572 p=32427 u=isrealurephu n=ansible | TASK [Install nodejs and npm] **************************************************************************************************************
+2023-05-21 14:29:44,111 p=32427 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 14:29:44,133 p=32427 u=isrealurephu n=ansible | PLAY [Deploying node-js application] *******************************************************************************************************
+2023-05-21 14:29:44,138 p=32427 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 14:30:04,506 p=32427 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 14:30:04,523 p=32427 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] **********************************************************************************************************
+2023-05-21 14:30:15,848 p=32427 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 14:30:15,856 p=32427 u=isrealurephu n=ansible | TASK [install npm dependecies] *************************************************************************************************************
+2023-05-21 14:30:32,752 p=32427 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 14:30:32,761 p=32427 u=isrealurephu n=ansible | TASK [Start the application] ***************************************************************************************************************
+2023-05-21 14:30:43,072 p=32427 u=isrealurephu n=ansible | fatal: [139.162.242.60]: FAILED! => {"changed": false, "cmd": "noder server", "msg": "[Errno 2] No such file or directory: b'noder'", "rc": 2, "stderr": "", "stderr_lines": [], "stdout": "", "stdout_lines": []}
+2023-05-21 14:30:43,074 p=32427 u=isrealurephu n=ansible | PLAY RECAP *********************************************************************************************************************************
+2023-05-21 14:30:43,074 p=32427 u=isrealurephu n=ansible | 139.162.242.60             : ok=6    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 14:32:22,884 p=32759 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] **************************************************************************************************
+2023-05-21 14:32:22,889 p=32759 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 14:32:25,147 p=32759 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 14:32:25,154 p=32759 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ***********************************************************************************************************
+2023-05-21 14:32:26,538 p=32759 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 14:32:26,542 p=32759 u=isrealurephu n=ansible | TASK [Install nodejs and npm] **************************************************************************************************************
+2023-05-21 14:32:27,987 p=32759 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 14:32:28,002 p=32759 u=isrealurephu n=ansible | PLAY [Deploying node-js application] *******************************************************************************************************
+2023-05-21 14:32:28,006 p=32759 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 14:32:29,525 p=32759 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 14:32:29,536 p=32759 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] **********************************************************************************************************
+2023-05-21 14:32:31,713 p=32759 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 14:32:31,720 p=32759 u=isrealurephu n=ansible | TASK [install npm dependecies] *************************************************************************************************************
+2023-05-21 14:32:33,207 p=32759 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 14:32:33,214 p=32759 u=isrealurephu n=ansible | TASK [Start the application] ***************************************************************************************************************
+2023-05-21 15:16:30,440 p=32759 u=isrealurephu n=ansible |  [ERROR]: User interrupted execution
+
+2023-05-21 15:16:33,566 p=35654 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] **************************************************************************************************
+2023-05-21 15:16:33,572 p=35654 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 15:16:35,280 p=35654 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:16:35,291 p=35654 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ***********************************************************************************************************
+2023-05-21 15:16:37,258 p=35654 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:16:37,266 p=35654 u=isrealurephu n=ansible | TASK [Install nodejs and npm] **************************************************************************************************************
+2023-05-21 15:16:38,670 p=35654 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:16:38,689 p=35654 u=isrealurephu n=ansible | PLAY [Deploying node-js application] *******************************************************************************************************
+2023-05-21 15:16:38,693 p=35654 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 15:16:40,121 p=35654 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:16:40,140 p=35654 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] **********************************************************************************************************
+2023-05-21 15:16:42,213 p=35654 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:16:42,229 p=35654 u=isrealurephu n=ansible | TASK [install npm dependecies] *************************************************************************************************************
+2023-05-21 15:16:43,679 p=35654 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:16:43,690 p=35654 u=isrealurephu n=ansible | TASK [Start the application] ***************************************************************************************************************
+2023-05-21 15:16:45,079 p=35654 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 15:16:45,102 p=35654 u=isrealurephu n=ansible | PLAY RECAP *********************************************************************************************************************************
+2023-05-21 15:16:45,102 p=35654 u=isrealurephu n=ansible | 139.162.242.60             : ok=7    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 15:26:41,628 p=36506 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] **************************************************************************************************
+2023-05-21 15:26:41,634 p=36506 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 15:26:43,743 p=36506 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:26:43,752 p=36506 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ***********************************************************************************************************
+2023-05-21 15:26:45,527 p=36506 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:26:45,534 p=36506 u=isrealurephu n=ansible | TASK [Install nodejs and npm] **************************************************************************************************************
+2023-05-21 15:26:47,091 p=36506 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:26:47,109 p=36506 u=isrealurephu n=ansible | PLAY [Deploying node-js application] *******************************************************************************************************
+2023-05-21 15:26:47,114 p=36506 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 15:26:48,518 p=36506 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:26:48,530 p=36506 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] **********************************************************************************************************
+2023-05-21 15:26:50,513 p=36506 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:26:50,521 p=36506 u=isrealurephu n=ansible | TASK [install npm dependecies] *************************************************************************************************************
+2023-05-21 15:26:51,924 p=36506 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:26:51,930 p=36506 u=isrealurephu n=ansible | TASK [Start the application] ***************************************************************************************************************
+2023-05-21 15:26:53,176 p=36506 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 15:26:53,183 p=36506 u=isrealurephu n=ansible | TASK [Ensure app is running] ***************************************************************************************************************
+2023-05-21 15:26:54,226 p=36506 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 15:26:54,241 p=36506 u=isrealurephu n=ansible | PLAY RECAP *********************************************************************************************************************************
+2023-05-21 15:26:54,242 p=36506 u=isrealurephu n=ansible | 139.162.242.60             : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 15:50:24,638 p=38098 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 15:50:24,644 p=38098 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 15:50:27,725 p=38098 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:50:27,736 p=38098 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 15:50:30,071 p=38098 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:50:30,077 p=38098 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 15:50:31,889 p=38098 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:50:31,905 p=38098 u=isrealurephu n=ansible | PLAY [Deploying node-js application] ****************************************************************
+2023-05-21 15:50:31,910 p=38098 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 15:50:34,598 p=38098 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:50:34,613 p=38098 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *******************************************************************
+2023-05-21 15:50:37,925 p=38098 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:50:37,931 p=38098 u=isrealurephu n=ansible | TASK [install npm dependecies] **********************************************************************
+2023-05-21 15:50:40,210 p=38098 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 15:50:40,218 p=38098 u=isrealurephu n=ansible | TASK [Start the application] ************************************************************************
+2023-05-21 15:50:42,390 p=38098 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 15:50:42,398 p=38098 u=isrealurephu n=ansible | TASK [Ensure app is running] ************************************************************************
+2023-05-21 15:50:44,305 p=38098 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 15:50:44,324 p=38098 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 15:50:44,324 p=38098 u=isrealurephu n=ansible | 139.162.242.60             : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 16:05:32,554 p=39250 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 16:05:32,560 p=39250 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:05:34,638 p=39250 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:05:34,648 p=39250 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 16:05:36,567 p=39250 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:05:36,573 p=39250 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 16:05:38,096 p=39250 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:05:38,104 p=39250 u=isrealurephu n=ansible | PLAY [Deploying node-js application] ****************************************************************
+2023-05-21 16:05:38,107 p=39250 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:05:39,551 p=39250 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:05:39,566 p=39250 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *******************************************************************
+2023-05-21 16:05:41,800 p=39250 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:05:41,808 p=39250 u=isrealurephu n=ansible | TASK [install npm dependecies] **********************************************************************
+2023-05-21 16:05:43,307 p=39250 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:05:43,310 p=39250 u=isrealurephu n=ansible | TASK [Start the application] ************************************************************************
+2023-05-21 16:05:44,606 p=39250 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:05:44,615 p=39250 u=isrealurephu n=ansible | TASK [Ensure app is running] ************************************************************************
+2023-05-21 16:05:46,122 p=39250 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:05:46,134 p=39250 u=isrealurephu n=ansible | TASK [print application app_status] *****************************************************************
+2023-05-21 16:05:46,157 p=39250 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "app_status": {
+        "changed": true,
+        "cmd": "ps aux | grep node",
+        "delta": "0:00:00.008730",
+        "end": "2023-05-21 15:05:46.183209",
+        "failed": false,
+        "msg": "",
+        "rc": 0,
+        "start": "2023-05-21 15:05:46.174479",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "root       29704  0.0  1.1 595516 45456 ?        Sl   14:50   0:00 node server\nroot       30310  0.0  0.0   2480   516 pts/1    S+   15:05   0:00 /bin/sh -c ps aux | grep node\nroot       30312  0.0  0.0   6372   712 pts/1    S+   15:05   0:00 grep node",
+        "stdout_lines": [
+            "root       29704  0.0  1.1 595516 45456 ?        Sl   14:50   0:00 node server",
+            "root       30310  0.0  0.0   2480   516 pts/1    S+   15:05   0:00 /bin/sh -c ps aux | grep node",
+            "root       30312  0.0  0.0   6372   712 pts/1    S+   15:05   0:00 grep node"
+        ]
+    }
+}
+2023-05-21 16:05:46,168 p=39250 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 16:05:46,168 p=39250 u=isrealurephu n=ansible | 139.162.242.60             : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 16:06:44,533 p=39439 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 16:06:44,539 p=39439 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:06:46,253 p=39439 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:06:46,263 p=39439 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 16:06:48,246 p=39439 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:06:48,250 p=39439 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 16:06:50,308 p=39439 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:06:50,329 p=39439 u=isrealurephu n=ansible | PLAY [Deploying node-js application] ****************************************************************
+2023-05-21 16:06:50,334 p=39439 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:06:51,843 p=39439 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:06:51,859 p=39439 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *******************************************************************
+2023-05-21 16:06:53,914 p=39439 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:06:53,923 p=39439 u=isrealurephu n=ansible | TASK [install npm dependecies] **********************************************************************
+2023-05-21 16:06:55,426 p=39439 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:06:55,436 p=39439 u=isrealurephu n=ansible | TASK [Start the application] ************************************************************************
+2023-05-21 16:06:56,750 p=39439 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:06:56,758 p=39439 u=isrealurephu n=ansible | TASK [Ensure app is running] ************************************************************************
+2023-05-21 16:06:57,737 p=39439 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:06:57,747 p=39439 u=isrealurephu n=ansible | TASK [print application app_status] *****************************************************************
+2023-05-21 16:06:57,768 p=39439 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "app_status.stdout_lines": [
+        "root       29704  0.0  1.1 595516 45456 ?        Sl   14:50   0:00 node server",
+        "root       30823  0.0  0.0   2480   516 pts/1    S+   15:06   0:00 /bin/sh -c ps aux | grep node",
+        "root       30825  0.0  0.0   6240   708 pts/1    R+   15:06   0:00 grep node"
+    ]
+}
+2023-05-21 16:06:57,779 p=39439 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 16:06:57,779 p=39439 u=isrealurephu n=ansible | 139.162.242.60             : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 16:30:57,500 p=41071 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 16:30:57,507 p=41071 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:30:59,682 p=41071 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:30:59,704 p=41071 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 16:31:01,494 p=41071 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:31:01,499 p=41071 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 16:31:03,237 p=41071 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:31:03,261 p=41071 u=isrealurephu n=ansible | PLAY [Deploying node-js application] ****************************************************************
+2023-05-21 16:31:03,266 p=41071 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:31:04,811 p=41071 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:31:04,827 p=41071 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *******************************************************************
+2023-05-21 16:31:06,878 p=41071 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:31:06,886 p=41071 u=isrealurephu n=ansible | TASK [install npm dependecies] **********************************************************************
+2023-05-21 16:31:08,589 p=41071 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:31:08,598 p=41071 u=isrealurephu n=ansible | TASK [Start the application] ************************************************************************
+2023-05-21 16:31:09,922 p=41071 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:31:09,933 p=41071 u=isrealurephu n=ansible | TASK [Ensure app is running] ************************************************************************
+2023-05-21 16:31:10,796 p=41071 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:31:10,806 p=41071 u=isrealurephu n=ansible | TASK [print application app_status] *****************************************************************
+2023-05-21 16:31:10,828 p=41071 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "app_status.stdout_lines": [
+        "root       31414 25.0  1.1 596076 48132 ?        Sl   15:31   0:00 node server",
+        "root       31435  0.0  0.0   2480   512 pts/1    S+   15:31   0:00 /bin/sh -c ps aux | grep node",
+        "root       31437  0.0  0.0   6240   708 pts/1    R+   15:31   0:00 grep node"
+    ]
+}
+2023-05-21 16:31:10,839 p=41071 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 16:31:10,839 p=41071 u=isrealurephu n=ansible | 139.162.242.60             : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 16:31:21,866 p=41265 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 16:31:21,871 p=41265 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:31:23,638 p=41265 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:31:23,647 p=41265 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 16:31:25,483 p=41265 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:31:25,489 p=41265 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 16:31:26,920 p=41265 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:31:26,938 p=41265 u=isrealurephu n=ansible | PLAY [create new user] ******************************************************************************
+2023-05-21 16:31:26,942 p=41265 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:31:28,716 p=41265 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:31:28,727 p=41265 u=isrealurephu n=ansible | TASK [Create new linus user] ************************************************************************
+2023-05-21 16:31:29,660 p=41265 u=isrealurephu n=ansible | fatal: [139.162.242.60]: FAILED! => {"changed": false, "msg": "Group admin does not exist"}
+2023-05-21 16:31:29,662 p=41265 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 16:31:29,662 p=41265 u=isrealurephu n=ansible | 139.162.242.60             : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 16:32:33,071 p=41446 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 16:32:33,077 p=41446 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:32:35,220 p=41446 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:32:35,230 p=41446 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 16:32:37,065 p=41446 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:32:37,071 p=41446 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 16:32:38,492 p=41446 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:32:38,506 p=41446 u=isrealurephu n=ansible | PLAY [create new user] ******************************************************************************
+2023-05-21 16:32:38,510 p=41446 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:32:39,951 p=41446 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:32:39,962 p=41446 u=isrealurephu n=ansible | TASK [Create new linus user] ************************************************************************
+2023-05-21 16:32:40,947 p=41446 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:32:40,964 p=41446 u=isrealurephu n=ansible | PLAY [Deploying node-js application] ****************************************************************
+2023-05-21 16:32:40,969 p=41446 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 16:32:42,594 p=41446 u=isrealurephu n=ansible | [WARNING]: Module remote_tmp /home/isreal/.ansible/tmp did not exist and was created with a mode of
+0700, this may cause issues when running as another user. To avoid this, create the remote_tmp dir
+with the correct permissions manually
+
+2023-05-21 16:32:42,595 p=41446 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 16:32:42,606 p=41446 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *******************************************************************
+2023-05-21 16:32:45,452 p=41446 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:32:45,460 p=41446 u=isrealurephu n=ansible | TASK [install npm dependecies] **********************************************************************
+2023-05-21 16:32:52,211 p=41446 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:32:52,218 p=41446 u=isrealurephu n=ansible | TASK [Start the application] ************************************************************************
+2023-05-21 16:32:53,585 p=41446 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:32:53,592 p=41446 u=isrealurephu n=ansible | TASK [Ensure app is running] ************************************************************************
+2023-05-21 16:32:54,518 p=41446 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 16:32:54,526 p=41446 u=isrealurephu n=ansible | TASK [print application app_status] *****************************************************************
+2023-05-21 16:32:54,545 p=41446 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "app_status.stdout_lines": [
+        "root       31414  0.2  1.1 595688 47792 ?        Sl   15:31   0:00 node server",
+        "isreal     32489  0.0  0.0   2480   576 pts/1    S+   15:32   0:00 /bin/sh -c ps aux | grep node",
+        "isreal     32491  0.0  0.0   6240   712 pts/1    S+   15:32   0:00 grep node"
+    ]
+}
+2023-05-21 16:32:54,555 p=41446 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 16:32:54,555 p=41446 u=isrealurephu n=ansible | 139.162.242.60             : ok=11   changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 17:31:56,282 p=45460 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 17:31:56,287 p=45460 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 17:31:58,521 p=45460 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:31:58,529 p=45460 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 17:32:01,899 p=45460 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 17:32:01,906 p=45460 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 17:32:03,355 p=45460 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:32:03,370 p=45460 u=isrealurephu n=ansible | PLAY [create new user] ******************************************************************************
+2023-05-21 17:32:03,375 p=45460 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 17:32:04,914 p=45460 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:32:04,925 p=45460 u=isrealurephu n=ansible | TASK [Create new linus user] ************************************************************************
+2023-05-21 17:32:06,137 p=45460 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:32:06,143 p=45460 u=isrealurephu n=ansible | TASK [debug] ****************************************************************************************
+2023-05-21 17:32:06,159 p=45460 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "user_creation": {
+        "append": false,
+        "changed": false,
+        "comment": "isreal admin",
+        "failed": false,
+        "group": 1000,
+        "home": "/home/isreal",
+        "move_home": false,
+        "name": "isreal",
+        "shell": "/bin/sh",
+        "state": "present",
+        "uid": 1000
+    }
+}
+2023-05-21 17:32:06,169 p=45460 u=isrealurephu n=ansible | PLAY [Deploying node-js application] ****************************************************************
+2023-05-21 17:32:06,172 p=45460 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 17:32:07,705 p=45460 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:32:07,716 p=45460 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *******************************************************************
+2023-05-21 17:32:10,113 p=45460 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 17:32:10,119 p=45460 u=isrealurephu n=ansible | TASK [debug] ****************************************************************************************
+2023-05-21 17:32:10,137 p=45460 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "unpacking": {
+        "changed": true,
+        "dest": "/home/isreal",
+        "extract_results": {
+            "cmd": [
+                "/usr/bin/tar",
+                "--extract",
+                "-C",
+                "/home/isreal",
+                "-z",
+                "-f",
+                "/var/tmp/ansible-tmp-1684686727.772492-45545-224608908690594/source"
+            ],
+            "err": "",
+            "out": "",
+            "rc": 0
+        },
+        "failed": false,
+        "gid": 1000,
+        "group": "isreal",
+        "handler": "TgzArchive",
+        "mode": "0755",
+        "owner": "isreal",
+        "size": 4096,
+        "src": "/var/tmp/ansible-tmp-1684686727.772492-45545-224608908690594/source",
+        "state": "directory",
+        "uid": 1000
+    }
+}
+2023-05-21 17:32:10,140 p=45460 u=isrealurephu n=ansible | TASK [install npm dependecies] **********************************************************************
+2023-05-21 17:32:11,756 p=45460 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:32:11,764 p=45460 u=isrealurephu n=ansible | TASK [Start the application] ************************************************************************
+2023-05-21 17:32:13,176 p=45460 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 17:32:13,183 p=45460 u=isrealurephu n=ansible | TASK [Ensure app is running] ************************************************************************
+2023-05-21 17:32:14,089 p=45460 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 17:32:14,096 p=45460 u=isrealurephu n=ansible | TASK [print application app_status] *****************************************************************
+2023-05-21 17:32:14,114 p=45460 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "app_status.stdout_lines": [
+        "isreal     33345 25.0  1.1 596308 45464 ?        Sl   16:32   0:00 node server",
+        "isreal     33364  0.0  0.0   2480   516 pts/1    S+   16:32   0:00 /bin/sh -c ps aux | grep node",
+        "isreal     33366  0.0  0.0   6240   644 pts/1    R+   16:32   0:00 grep node"
+    ]
+}
+2023-05-21 17:32:14,124 p=45460 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 17:32:14,124 p=45460 u=isrealurephu n=ansible | 139.162.242.60             : ok=13   changed=4    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 17:49:35,015 p=46700 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 17:49:35,021 p=46700 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 17:49:37,291 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:49:37,297 p=46700 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 17:49:38,567 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:49:38,572 p=46700 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 17:49:40,285 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:49:40,307 p=46700 u=isrealurephu n=ansible | PLAY [create new user] ******************************************************************************
+2023-05-21 17:49:40,313 p=46700 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 17:49:42,186 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:49:42,194 p=46700 u=isrealurephu n=ansible | TASK [Create new linus user] ************************************************************************
+2023-05-21 17:49:43,613 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:49:43,623 p=46700 u=isrealurephu n=ansible | TASK [debug] ****************************************************************************************
+2023-05-21 17:49:43,642 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "user_creation": {
+        "append": false,
+        "changed": false,
+        "comment": "isreal admin",
+        "failed": false,
+        "group": 1000,
+        "home": "/home/isreal",
+        "move_home": false,
+        "name": "isreal",
+        "shell": "/bin/sh",
+        "state": "present",
+        "uid": 1000
+    }
+}
+2023-05-21 17:49:43,652 p=46700 u=isrealurephu n=ansible | PLAY [Deploying node-js application] ****************************************************************
+2023-05-21 17:49:43,656 p=46700 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 17:49:45,898 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:49:45,909 p=46700 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *******************************************************************
+2023-05-21 17:49:48,452 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:49:48,459 p=46700 u=isrealurephu n=ansible | TASK [debug] ****************************************************************************************
+2023-05-21 17:49:48,479 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "unpacking": {
+        "changed": false,
+        "dest": "/home/isreal",
+        "failed": false,
+        "gid": 1000,
+        "group": "isreal",
+        "handler": "TgzArchive",
+        "mode": "0755",
+        "owner": "isreal",
+        "size": 4096,
+        "src": "/var/tmp/ansible-tmp-1684687785.9652128-46776-249207680061809/source",
+        "state": "directory",
+        "uid": 1000
+    }
+}
+2023-05-21 17:49:48,482 p=46700 u=isrealurephu n=ansible | TASK [install npm dependecies] **********************************************************************
+2023-05-21 17:49:49,994 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:49:50,001 p=46700 u=isrealurephu n=ansible | TASK [Start the application] ************************************************************************
+2023-05-21 17:49:51,357 p=46700 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 17:49:51,361 p=46700 u=isrealurephu n=ansible | TASK [Ensure app is running] ************************************************************************
+2023-05-21 17:49:52,247 p=46700 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 17:49:52,250 p=46700 u=isrealurephu n=ansible | TASK [print application app_status] *****************************************************************
+2023-05-21 17:49:52,263 p=46700 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "app_status.stdout_lines": [
+        "isreal     33741  0.0  1.1 596588 45856 ?        Sl   16:49   0:00 node server",
+        "isreal     33760  0.0  0.0   2480   516 pts/1    S+   16:49   0:00 /bin/sh -c ps aux | grep node",
+        "isreal     33762  0.0  0.0   6240   644 pts/1    R+   16:49   0:00 grep node"
+    ]
+}
+2023-05-21 17:49:52,271 p=46700 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 17:49:52,271 p=46700 u=isrealurephu n=ansible | 139.162.242.60             : ok=13   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 17:50:02,540 p=46962 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] ***********************************************************
+2023-05-21 17:50:02,544 p=46962 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 17:50:04,448 p=46962 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:50:04,458 p=46962 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ********************************************************************
+2023-05-21 17:50:05,767 p=46962 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:50:05,774 p=46962 u=isrealurephu n=ansible | TASK [Install nodejs and npm] ***********************************************************************
+2023-05-21 17:50:07,493 p=46962 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:50:07,508 p=46962 u=isrealurephu n=ansible | PLAY [create new user] ******************************************************************************
+2023-05-21 17:50:07,512 p=46962 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 17:50:08,965 p=46962 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:50:08,976 p=46962 u=isrealurephu n=ansible | TASK [Create new linus user] ************************************************************************
+2023-05-21 17:50:10,054 p=46962 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:50:10,061 p=46962 u=isrealurephu n=ansible | TASK [debug] ****************************************************************************************
+2023-05-21 17:50:10,080 p=46962 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "user_creation": {
+        "append": false,
+        "changed": false,
+        "comment": "isreal admin",
+        "failed": false,
+        "group": 1000,
+        "home": "/home/isreal",
+        "move_home": false,
+        "name": "isreal",
+        "shell": "/bin/sh",
+        "state": "present",
+        "uid": 1000
+    }
+}
+2023-05-21 17:50:10,090 p=46962 u=isrealurephu n=ansible | PLAY [Deploying node-js application] ****************************************************************
+2023-05-21 17:50:10,093 p=46962 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************
+2023-05-21 17:50:11,703 p=46962 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:50:11,715 p=46962 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *******************************************************************
+2023-05-21 17:50:11,727 p=46962 u=isrealurephu n=ansible | fatal: [139.162.242.60]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'location' is undefined. 'location' is undefined\n\nThe error appears to be in '/Users/isrealurephu/bootcamp-projects/ansible/nodejs-app.yaml': line 38, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n  - name: unpack the nodejs tar file\n    ^ here\n"}
+2023-05-21 17:50:11,728 p=46962 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************
+2023-05-21 17:50:11,728 p=46962 u=isrealurephu n=ansible | 139.162.242.60             : ok=7    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 17:57:16,715 p=47575 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] **************************************************************************************************
+2023-05-21 17:57:16,720 p=47575 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 17:57:18,760 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:57:18,769 p=47575 u=isrealurephu n=ansible | TASK [Update apt repo and catch] ***********************************************************************************************************
+2023-05-21 17:57:20,113 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:57:20,119 p=47575 u=isrealurephu n=ansible | TASK [Install nodejs and npm] **************************************************************************************************************
+2023-05-21 17:57:21,564 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:57:21,579 p=47575 u=isrealurephu n=ansible | PLAY [create new user] *********************************************************************************************************************
+2023-05-21 17:57:21,583 p=47575 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 17:57:23,058 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:57:23,069 p=47575 u=isrealurephu n=ansible | TASK [Create new linus user] ***************************************************************************************************************
+2023-05-21 17:57:24,121 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:57:24,130 p=47575 u=isrealurephu n=ansible | TASK [debug] *******************************************************************************************************************************
+2023-05-21 17:57:24,150 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "user_creation": {
+        "append": false,
+        "changed": false,
+        "comment": "isreal admin",
+        "failed": false,
+        "group": 1000,
+        "home": "/home/isreal",
+        "move_home": false,
+        "name": "isreal",
+        "shell": "/bin/sh",
+        "state": "present",
+        "uid": 1000
+    }
+}
+2023-05-21 17:57:24,159 p=47575 u=isrealurephu n=ansible | PLAY [Deploying node-js application] *******************************************************************************************************
+2023-05-21 17:57:24,163 p=47575 u=isrealurephu n=ansible | TASK [Gathering Facts] *********************************************************************************************************************
+2023-05-21 17:57:25,861 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:57:25,872 p=47575 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] **********************************************************************************************************
+2023-05-21 17:57:28,221 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:57:28,228 p=47575 u=isrealurephu n=ansible | TASK [debug] *******************************************************************************************************************************
+2023-05-21 17:57:28,245 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "unpacking": {
+        "changed": false,
+        "dest": "/home/isreal",
+        "failed": false,
+        "gid": 1000,
+        "group": "isreal",
+        "handler": "TgzArchive",
+        "mode": "0755",
+        "owner": "isreal",
+        "size": 4096,
+        "src": "/var/tmp/ansible-tmp-1684688245.9300811-47647-232319679057551/source",
+        "state": "directory",
+        "uid": 1000
+    }
+}
+2023-05-21 17:57:28,249 p=47575 u=isrealurephu n=ansible | TASK [install npm dependecies] *************************************************************************************************************
+2023-05-21 17:57:29,801 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 17:57:29,810 p=47575 u=isrealurephu n=ansible | TASK [Start the application] ***************************************************************************************************************
+2023-05-21 17:57:31,197 p=47575 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 17:57:31,207 p=47575 u=isrealurephu n=ansible | TASK [Ensure app is running] ***************************************************************************************************************
+2023-05-21 17:57:32,116 p=47575 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 17:57:32,122 p=47575 u=isrealurephu n=ansible | TASK [print application app_status] ********************************************************************************************************
+2023-05-21 17:57:32,137 p=47575 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "app_status.stdout_lines": [
+        "isreal     33741  0.0  1.1 595504 45820 ?        Sl   16:49   0:00 node server",
+        "isreal     34449  0.0  0.0   2480   520 pts/1    S+   16:57   0:00 /bin/sh -c ps aux | grep node",
+        "isreal     34451  0.0  0.0   6240   716 pts/1    R+   16:57   0:00 grep node"
+    ]
+}
+2023-05-21 17:57:32,149 p=47575 u=isrealurephu n=ansible | PLAY RECAP *********************************************************************************************************************************
+2023-05-21 17:57:32,150 p=47575 u=isrealurephu n=ansible | 139.162.242.60             : ok=13   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 18:14:11,793 p=48806 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] *****************************************************************************************
+2023-05-21 18:14:11,798 p=48806 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 18:14:13,967 p=48806 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:14:13,996 p=48806 u=isrealurephu n=ansible | TASK [Update apt repo and catch] **************************************************************************************************
+2023-05-21 18:14:15,480 p=48806 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:14:15,486 p=48806 u=isrealurephu n=ansible | TASK [Install nodejs and npm] *****************************************************************************************************
+2023-05-21 18:14:17,018 p=48806 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:14:17,036 p=48806 u=isrealurephu n=ansible | PLAY [create new user] ************************************************************************************************************
+2023-05-21 18:14:17,040 p=48806 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 18:14:18,560 p=48806 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:14:18,571 p=48806 u=isrealurephu n=ansible | TASK [Create new linus user] ******************************************************************************************************
+2023-05-21 18:14:19,716 p=48806 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:14:19,724 p=48806 u=isrealurephu n=ansible | TASK [debug] **********************************************************************************************************************
+2023-05-21 18:14:19,743 p=48806 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "user_creation": {
+        "append": false,
+        "changed": false,
+        "comment": "isreal admin",
+        "failed": false,
+        "group": 1000,
+        "home": "/home/isreal",
+        "move_home": false,
+        "name": "isreal",
+        "shell": "/bin/sh",
+        "state": "present",
+        "uid": 1000
+    }
+}
+2023-05-21 18:14:19,754 p=48806 u=isrealurephu n=ansible | PLAY [Deploying node-js application] **********************************************************************************************
+2023-05-21 18:14:19,757 p=48806 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 18:14:21,583 p=48806 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:14:21,596 p=48806 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *************************************************************************************************
+2023-05-21 18:14:21,608 p=48806 u=isrealurephu n=ansible | fatal: [139.162.242.60]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'location' is undefined. 'location' is undefined\n\nThe error appears to be in '/Users/isrealurephu/bootcamp-projects/ansible/nodejs-app.yaml': line 41, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n  - name: unpack the nodejs tar file\n    ^ here\n"}
+2023-05-21 18:14:21,609 p=48806 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************************************************
+2023-05-21 18:14:21,609 p=48806 u=isrealurephu n=ansible | 139.162.242.60             : ok=7    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 18:16:06,349 p=49002 u=isrealurephu n=ansible | PLAY [Installing app dependecies via npm] *****************************************************************************************
+2023-05-21 18:16:06,354 p=49002 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 18:16:08,519 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:16:08,535 p=49002 u=isrealurephu n=ansible | TASK [Update apt repo and catch] **************************************************************************************************
+2023-05-21 18:16:09,962 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:16:09,968 p=49002 u=isrealurephu n=ansible | TASK [Install nodejs and npm] *****************************************************************************************************
+2023-05-21 18:16:11,604 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:16:11,621 p=49002 u=isrealurephu n=ansible | PLAY [create new user] ************************************************************************************************************
+2023-05-21 18:16:11,626 p=49002 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 18:16:13,150 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:16:13,161 p=49002 u=isrealurephu n=ansible | TASK [Create new linus user] ******************************************************************************************************
+2023-05-21 18:16:14,269 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:16:14,277 p=49002 u=isrealurephu n=ansible | TASK [debug] **********************************************************************************************************************
+2023-05-21 18:16:14,295 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "user_creation": {
+        "append": false,
+        "changed": false,
+        "comment": "isreal admin",
+        "failed": false,
+        "group": 1000,
+        "home": "/home/isreal",
+        "move_home": false,
+        "name": "isreal",
+        "shell": "/bin/sh",
+        "state": "present",
+        "uid": 1000
+    }
+}
+2023-05-21 18:16:14,308 p=49002 u=isrealurephu n=ansible | PLAY [Deploying node-js application] **********************************************************************************************
+2023-05-21 18:16:14,314 p=49002 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 18:16:15,901 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:16:15,910 p=49002 u=isrealurephu n=ansible | TASK [unpack the nodejs tar file] *************************************************************************************************
+2023-05-21 18:16:18,257 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:16:18,264 p=49002 u=isrealurephu n=ansible | TASK [debug] **********************************************************************************************************************
+2023-05-21 18:16:18,283 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "unpacking": {
+        "changed": false,
+        "dest": "/home/isreal",
+        "failed": false,
+        "gid": 1000,
+        "group": "isreal",
+        "handler": "TgzArchive",
+        "mode": "0755",
+        "owner": "isreal",
+        "size": 4096,
+        "src": "/var/tmp/ansible-tmp-1684689375.964607-49079-178365784195143/source",
+        "state": "directory",
+        "uid": 1000
+    }
+}
+2023-05-21 18:16:18,287 p=49002 u=isrealurephu n=ansible | TASK [install npm dependecies] ****************************************************************************************************
+2023-05-21 18:16:19,898 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60]
+2023-05-21 18:16:19,906 p=49002 u=isrealurephu n=ansible | TASK [Start the application] ******************************************************************************************************
+2023-05-21 18:16:21,337 p=49002 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 18:16:21,344 p=49002 u=isrealurephu n=ansible | TASK [Ensure app is running] ******************************************************************************************************
+2023-05-21 18:16:22,262 p=49002 u=isrealurephu n=ansible | changed: [139.162.242.60]
+2023-05-21 18:16:22,268 p=49002 u=isrealurephu n=ansible | TASK [print application app_status] ***********************************************************************************************
+2023-05-21 18:16:22,285 p=49002 u=isrealurephu n=ansible | ok: [139.162.242.60] => {
+    "app_status.stdout_lines": [
+        "isreal     35053  0.0  1.1 596300 46240 ?        Sl   17:16   0:00 node server",
+        "isreal     35072  0.0  0.0   2480   580 pts/1    S+   17:16   0:00 /bin/sh -c ps aux | grep node",
+        "isreal     35074  0.0  0.0   6240   712 pts/1    R+   17:16   0:00 grep node"
+    ]
+}
+2023-05-21 18:16:22,295 p=49002 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************************************************
+2023-05-21 18:16:22,295 p=49002 u=isrealurephu n=ansible | 139.162.242.60             : ok=13   changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 18:28:56,904 p=50094 u=isrealurephu n=ansible | {
+    "_meta": {
+        "hostvars": {
+            "139.162.242.60": {
+                "ansible_ssh_private_key_file": "/Users/isrealurephu/.ssh/id_rsa",
+                "ansible_user": "root"
+            },
+            "209.38.196.182": {
+                "ansible_ssh_private_key_file": "/Users/isrealurephu/.ssh/id_rsa",
+                "ansible_user": "root"
+            },
+            "209.38.196.186": {
+                "ansible_ssh_private_key_file": "/Users/isrealurephu/.ssh/id_rsa",
+                "ansible_user": "root"
+            },
+            "3.84.10.202": {
+                "ansible_ssh_private_key_file": "/Users/isrealurephu/downloads/my-key.pem",
+                "ansible_user": "ubuntu"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "droplet_websrvers",
+            "aws_instances",
+            "linodes"
+        ]
+    },
+    "aws_instances": {
+        "hosts": [
+            "3.84.10.202"
+        ]
+    },
+    "droplet_websrvers": {
+        "hosts": [
+            "209.38.196.182",
+            "209.38.196.186"
+        ]
+    },
+    "linodes": {
+        "hosts": [
+            "139.162.242.60"
+        ]
+    }
+}
+2023-05-21 18:36:08,477 p=50643 u=isrealurephu n=ansible | ERROR! the playbook: nexus-playbook.yaml could not be found
+2023-05-21 18:36:19,625 p=50671 u=isrealurephu n=ansible | PLAY [install java and net-tools] ********************************************************************
+2023-05-21 18:36:19,631 p=50671 u=isrealurephu n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-05-21 18:36:23,584 p=50671 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:36:25,136 p=50671 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:36:25,156 p=50671 u=isrealurephu n=ansible | TASK [Update reposistory] ****************************************************************************
+2023-05-21 18:36:40,420 p=50671 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 18:36:46,934 p=50671 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 18:36:46,948 p=50671 u=isrealurephu n=ansible | TASK [Java 8 installation] ***************************************************************************
+2023-05-21 18:37:02,123 p=50671 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 18:37:12,598 p=50671 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 18:37:12,632 p=50671 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ********************************************
+2023-05-21 18:37:12,636 p=50671 u=isrealurephu n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-05-21 18:37:15,054 p=50671 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:37:15,480 p=50671 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:37:15,504 p=50671 u=isrealurephu n=ansible | TASK [Download Nexus] ********************************************************************************
+2023-05-21 18:37:20,275 p=50671 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 18:37:22,312 p=50671 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 18:37:22,358 p=50671 u=isrealurephu n=ansible | PLAY RECAP *******************************************************************************************
+2023-05-21 18:37:22,359 p=50671 u=isrealurephu n=ansible | 209.38.196.182             : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 18:37:22,359 p=50671 u=isrealurephu n=ansible | 209.38.196.186             : ok=5    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 18:47:25,680 p=51493 u=isrealurephu n=ansible | PLAY [install java and net-tools] ********************************************************************
+2023-05-21 18:47:25,689 p=51493 u=isrealurephu n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-05-21 18:47:29,681 p=51493 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:47:30,215 p=51493 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:47:30,234 p=51493 u=isrealurephu n=ansible | TASK [Update reposistory] ****************************************************************************
+2023-05-21 18:47:32,457 p=51493 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:47:33,118 p=51493 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:47:33,126 p=51493 u=isrealurephu n=ansible | TASK [Java 8 installation] ***************************************************************************
+2023-05-21 18:47:35,289 p=51493 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:47:35,923 p=51493 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:47:35,961 p=51493 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ********************************************
+2023-05-21 18:47:35,966 p=51493 u=isrealurephu n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-05-21 18:47:38,339 p=51493 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:47:38,647 p=51493 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:47:38,669 p=51493 u=isrealurephu n=ansible | TASK [Download Nexus] ********************************************************************************
+2023-05-21 18:47:46,477 p=51493 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:47:47,377 p=51493 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:47:47,387 p=51493 u=isrealurephu n=ansible | TASK [Untar Nexus installer] *************************************************************************
+2023-05-21 18:47:57,912 p=51493 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 18:47:59,878 p=51493 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 18:47:59,917 p=51493 u=isrealurephu n=ansible | PLAY RECAP *******************************************************************************************
+2023-05-21 18:47:59,917 p=51493 u=isrealurephu n=ansible | 209.38.196.182             : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 18:47:59,917 p=51493 u=isrealurephu n=ansible | 209.38.196.186             : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 18:51:18,922 p=51908 u=isrealurephu n=ansible | PLAY [install java and net-tools] ********************************************************************
+2023-05-21 18:51:18,930 p=51908 u=isrealurephu n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-05-21 18:51:22,872 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:51:24,218 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:51:24,231 p=51908 u=isrealurephu n=ansible | TASK [Update reposistory] ****************************************************************************
+2023-05-21 18:51:26,351 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:51:26,820 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:51:26,826 p=51908 u=isrealurephu n=ansible | TASK [Java 8 installation] ***************************************************************************
+2023-05-21 18:51:29,051 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:51:29,471 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:51:29,505 p=51908 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ********************************************
+2023-05-21 18:51:29,509 p=51908 u=isrealurephu n=ansible | TASK [Gathering Facts] *******************************************************************************
+2023-05-21 18:51:31,885 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:51:32,034 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 18:51:32,052 p=51908 u=isrealurephu n=ansible | TASK [Download Nexus] ********************************************************************************
+2023-05-21 18:51:37,176 p=51908 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 18:51:37,304 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 18:51:37,314 p=51908 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] *************************************************************************
+2023-05-21 18:51:37,331 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.182] => {
+    "download_result": {
+        "changed": false,
+        "checksum_dest": "7330baa0691cd6adf5e8a78cd98b1f2fabbcdc3b",
+        "checksum_src": "7330baa0691cd6adf5e8a78cd98b1f2fabbcdc3b",
+        "dest": "/opt/nexus-3.54.1-01-unix.tar.gz",
+        "elapsed": 1,
+        "failed": false,
+        "gid": 0,
+        "group": "root",
+        "md5sum": "8605aff21d2a82ac39531ffbe6a272fc",
+        "mode": "0440",
+        "msg": "OK (210531214 bytes)",
+        "owner": "root",
+        "size": 210531214,
+        "src": "/root/.ansible/tmp/ansible-tmp-1684691492.132437-52020-59772718407557/tmp6bs9clii",
+        "state": "file",
+        "status_code": 200,
+        "uid": 0,
+        "url": "https://download.sonatype.com/nexus/3/latest-unix.tar.gz"
+    }
+}
+2023-05-21 18:51:37,336 p=51908 u=isrealurephu n=ansible | ok: [209.38.196.186] => {
+    "download_result": {
+        "changed": true,
+        "checksum_dest": null,
+        "checksum_src": "7330baa0691cd6adf5e8a78cd98b1f2fabbcdc3b",
+        "dest": "/opt/nexus-3.54.1-01-unix.tar.gz",
+        "elapsed": 1,
+        "failed": false,
+        "gid": 0,
+        "group": "root",
+        "md5sum": "8605aff21d2a82ac39531ffbe6a272fc",
+        "mode": "0440",
+        "msg": "OK (210531214 bytes)",
+        "owner": "root",
+        "size": 210531214,
+        "src": "/root/.ansible/tmp/ansible-tmp-1684691492.143877-52021-227439178062980/tmpwh791na3",
+        "state": "file",
+        "status_code": 200,
+        "uid": 0,
+        "url": "https://download.sonatype.com/nexus/3/latest-unix.tar.gz"
+    }
+}
+2023-05-21 18:51:37,358 p=51908 u=isrealurephu n=ansible | PLAY RECAP *******************************************************************************************
+2023-05-21 18:51:37,358 p=51908 u=isrealurephu n=ansible | 209.38.196.182             : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 18:51:37,358 p=51908 u=isrealurephu n=ansible | 209.38.196.186             : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:08:00,362 p=53214 u=isrealurephu n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  found unacceptable key (unhashable type: 'AnsibleMapping')
+
+The error appears to be in '/Users/isrealurephu/bootcamp-projects/ansible/nexux-playbook.yaml': line 27, column 12, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    unarchive:
+     src: {{download_result.dest}}
+           ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2023-05-21 19:08:40,977 p=53293 u=isrealurephu n=ansible | PLAY [install java and net-tools] *************************************************************************************************
+2023-05-21 19:08:40,983 p=53293 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:08:45,604 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:08:46,781 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:08:46,802 p=53293 u=isrealurephu n=ansible | TASK [Update reposistory] *********************************************************************************************************
+2023-05-21 19:08:48,999 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:08:49,847 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:08:49,857 p=53293 u=isrealurephu n=ansible | TASK [Java 8 installation] ********************************************************************************************************
+2023-05-21 19:08:52,382 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:08:53,036 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:08:53,071 p=53293 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] *************************************************************************
+2023-05-21 19:08:53,076 p=53293 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:08:58,145 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:08:58,500 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:08:58,522 p=53293 u=isrealurephu n=ansible | TASK [Download Nexus] *************************************************************************************************************
+2023-05-21 19:09:04,891 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:09:07,495 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:09:07,506 p=53293 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ******************************************************************************************************
+2023-05-21 19:09:15,430 p=53293 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:09:21,080 p=53293 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 19:09:21,115 p=53293 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************************************************
+2023-05-21 19:09:21,116 p=53293 u=isrealurephu n=ansible | 209.38.196.182             : ok=6    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:09:21,116 p=53293 u=isrealurephu n=ansible | 209.38.196.186             : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:19:20,468 p=54096 u=isrealurephu n=ansible | PLAY [install java and net-tools] *************************************************************************************************
+2023-05-21 19:19:20,473 p=54096 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:19:24,691 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:19:25,614 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:19:25,637 p=54096 u=isrealurephu n=ansible | TASK [Update reposistory] *********************************************************************************************************
+2023-05-21 19:19:27,850 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:19:28,345 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:19:28,355 p=54096 u=isrealurephu n=ansible | TASK [Java 8 installation] ********************************************************************************************************
+2023-05-21 19:19:30,688 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:19:31,075 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:19:31,114 p=54096 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] *************************************************************************
+2023-05-21 19:19:31,118 p=54096 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:19:33,496 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:19:33,855 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:19:33,876 p=54096 u=isrealurephu n=ansible | TASK [Download Nexus] *************************************************************************************************************
+2023-05-21 19:19:40,623 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:19:44,049 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:19:44,062 p=54096 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ******************************************************************************************************
+2023-05-21 19:19:51,585 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:19:54,187 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:19:54,198 p=54096 u=isrealurephu n=ansible | TASK [find nexus folder] **********************************************************************************************************
+2023-05-21 19:19:55,772 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:19:55,897 p=54096 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:19:55,906 p=54096 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] ******************************************************************************************************
+2023-05-21 19:19:55,923 p=54096 u=isrealurephu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: NoneType: None
+2023-05-21 19:19:55,923 p=54096 u=isrealurephu n=ansible | fatal: [209.38.196.182]: FAILED! => {"msg": "Invalid options for ansible.builtin.debug: sg"}
+2023-05-21 19:19:55,928 p=54096 u=isrealurephu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: NoneType: None
+2023-05-21 19:19:55,928 p=54096 u=isrealurephu n=ansible | fatal: [209.38.196.186]: FAILED! => {"msg": "Invalid options for ansible.builtin.debug: sg"}
+2023-05-21 19:19:55,929 p=54096 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************************************************
+2023-05-21 19:19:55,929 p=54096 u=isrealurephu n=ansible | 209.38.196.182             : ok=7    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:19:55,929 p=54096 u=isrealurephu n=ansible | 209.38.196.186             : ok=7    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:22:04,686 p=54451 u=isrealurephu n=ansible | PLAY [install java and net-tools] *************************************************************************************************
+2023-05-21 19:22:04,691 p=54451 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:22:09,404 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:22:09,438 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:22:09,454 p=54451 u=isrealurephu n=ansible | TASK [Update reposistory] *********************************************************************************************************
+2023-05-21 19:22:11,944 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:22:12,256 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:22:12,265 p=54451 u=isrealurephu n=ansible | TASK [Java 8 installation] ********************************************************************************************************
+2023-05-21 19:22:14,650 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:22:14,969 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:22:15,005 p=54451 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] *************************************************************************
+2023-05-21 19:22:15,010 p=54451 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:22:17,733 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:22:17,862 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:22:17,881 p=54451 u=isrealurephu n=ansible | TASK [Download Nexus] *************************************************************************************************************
+2023-05-21 19:22:25,518 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:22:31,751 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:22:31,762 p=54451 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ******************************************************************************************************
+2023-05-21 19:22:39,472 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:22:41,099 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:22:41,110 p=54451 u=isrealurephu n=ansible | TASK [find nexus folder] **********************************************************************************************************
+2023-05-21 19:22:42,582 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:22:42,797 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:22:42,803 p=54451 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] ******************************************************************************************************
+2023-05-21 19:22:42,816 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.182] => {
+    "msg": {
+        "changed": false,
+        "examined": 4,
+        "failed": false,
+        "files": [
+            {
+                "atime": 1684691274.062416,
+                "ctime": 1684691274.290425,
+                "dev": 64513,
+                "gid": 0,
+                "gr_name": "root",
+                "inode": 509365,
+                "isblk": false,
+                "ischr": false,
+                "isdir": true,
+                "isfifo": false,
+                "isgid": false,
+                "islnk": false,
+                "isreg": false,
+                "issock": false,
+                "isuid": false,
+                "mode": "0755",
+                "mtime": 1684691274.290425,
+                "nlink": 10,
+                "path": "/opt/nexus-3.54.1-01",
+                "pw_name": "root",
+                "rgrp": true,
+                "roth": true,
+                "rusr": true,
+                "size": 4096,
+                "uid": 0,
+                "wgrp": false,
+                "woth": false,
+                "wusr": true,
+                "xgrp": true,
+                "xoth": true,
+                "xusr": true
+            }
+        ],
+        "matched": 1,
+        "msg": "All paths examined",
+        "skipped_paths": {}
+    }
+}
+2023-05-21 19:22:42,820 p=54451 u=isrealurephu n=ansible | ok: [209.38.196.186] => {
+    "msg": {
+        "changed": false,
+        "examined": 4,
+        "failed": false,
+        "files": [
+            {
+                "atime": 1684692555.91974,
+                "ctime": 1684692556.1957614,
+                "dev": 64513,
+                "gid": 0,
+                "gr_name": "root",
+                "inode": 509365,
+                "isblk": false,
+                "ischr": false,
+                "isdir": true,
+                "isfifo": false,
+                "isgid": false,
+                "islnk": false,
+                "isreg": false,
+                "issock": false,
+                "isuid": false,
+                "mode": "0755",
+                "mtime": 1684692556.1957614,
+                "nlink": 10,
+                "path": "/opt/nexus-3.54.1-01",
+                "pw_name": "root",
+                "rgrp": true,
+                "roth": true,
+                "rusr": true,
+                "size": 4096,
+                "uid": 0,
+                "wgrp": false,
+                "woth": false,
+                "wusr": true,
+                "xgrp": true,
+                "xoth": true,
+                "xusr": true
+            }
+        ],
+        "matched": 1,
+        "msg": "All paths examined",
+        "skipped_paths": {}
+    }
+}
+2023-05-21 19:22:42,840 p=54451 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************************************************
+2023-05-21 19:22:42,840 p=54451 u=isrealurephu n=ansible | 209.38.196.182             : ok=8    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:22:42,840 p=54451 u=isrealurephu n=ansible | 209.38.196.186             : ok=8    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:26:05,941 p=54979 u=isrealurephu n=ansible | PLAY [install java and net-tools] *************************************************************************************************
+2023-05-21 19:26:05,946 p=54979 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:26:10,008 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:26:10,789 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:26:10,810 p=54979 u=isrealurephu n=ansible | TASK [Update reposistory] *********************************************************************************************************
+2023-05-21 19:26:13,353 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:26:14,952 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:26:14,957 p=54979 u=isrealurephu n=ansible | TASK [Java 8 installation] ********************************************************************************************************
+2023-05-21 19:26:17,612 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:26:18,495 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:26:18,531 p=54979 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] *************************************************************************
+2023-05-21 19:26:18,535 p=54979 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:26:21,192 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:26:21,229 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:26:21,244 p=54979 u=isrealurephu n=ansible | TASK [Download Nexus] *************************************************************************************************************
+2023-05-21 19:26:27,461 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:26:29,745 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:26:29,758 p=54979 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ******************************************************************************************************
+2023-05-21 19:26:38,165 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:26:40,046 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:26:40,055 p=54979 u=isrealurephu n=ansible | TASK [find nexus folder] **********************************************************************************************************
+2023-05-21 19:26:41,529 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:26:41,897 p=54979 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:26:41,908 p=54979 u=isrealurephu n=ansible | TASK [rename nexus folder] ********************************************************************************************************
+2023-05-21 19:26:41,925 p=54979 u=isrealurephu n=ansible | fatal: [209.38.196.182]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: dict object has no element 0. dict object has no element 0\n\nThe error appears to be in '/Users/isrealurephu/bootcamp-projects/ansible/nexux-playbook.yaml': line 41, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n  - name: rename nexus folder\n    ^ here\n"}
+2023-05-21 19:26:41,931 p=54979 u=isrealurephu n=ansible | fatal: [209.38.196.186]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: dict object has no element 0. dict object has no element 0\n\nThe error appears to be in '/Users/isrealurephu/bootcamp-projects/ansible/nexux-playbook.yaml': line 41, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n  - name: rename nexus folder\n    ^ here\n"}
+2023-05-21 19:26:41,932 p=54979 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************************************************
+2023-05-21 19:26:41,932 p=54979 u=isrealurephu n=ansible | 209.38.196.182             : ok=7    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:26:41,932 p=54979 u=isrealurephu n=ansible | 209.38.196.186             : ok=7    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:28:52,790 p=55354 u=isrealurephu n=ansible | PLAY [install java and net-tools] *************************************************************************************************
+2023-05-21 19:28:52,796 p=55354 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:28:57,614 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:28:58,016 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:28:58,037 p=55354 u=isrealurephu n=ansible | TASK [Update reposistory] *********************************************************************************************************
+2023-05-21 19:29:00,241 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:29:00,729 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:29:00,738 p=55354 u=isrealurephu n=ansible | TASK [Java 8 installation] ********************************************************************************************************
+2023-05-21 19:29:03,024 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:29:03,630 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:29:03,668 p=55354 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] *************************************************************************
+2023-05-21 19:29:03,673 p=55354 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:29:06,116 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:29:06,422 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:29:06,444 p=55354 u=isrealurephu n=ansible | TASK [Download Nexus] *************************************************************************************************************
+2023-05-21 19:29:13,259 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:29:15,308 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:29:15,317 p=55354 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ******************************************************************************************************
+2023-05-21 19:29:23,235 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:29:27,553 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:29:27,566 p=55354 u=isrealurephu n=ansible | TASK [find nexus folder] **********************************************************************************************************
+2023-05-21 19:29:29,109 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:29:29,111 p=55354 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:29:29,120 p=55354 u=isrealurephu n=ansible | TASK [rename nexus folder] ********************************************************************************************************
+2023-05-21 19:29:29,134 p=55354 u=isrealurephu n=ansible | fatal: [209.38.196.182]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: dict object has no element 0. dict object has no element 0\n\nThe error appears to be in '/Users/isrealurephu/bootcamp-projects/ansible/nexux-playbook.yaml': line 41, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n  - name: rename nexus folder\n    ^ here\n"}
+2023-05-21 19:29:29,139 p=55354 u=isrealurephu n=ansible | fatal: [209.38.196.186]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: dict object has no element 0. dict object has no element 0\n\nThe error appears to be in '/Users/isrealurephu/bootcamp-projects/ansible/nexux-playbook.yaml': line 41, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n  - name: rename nexus folder\n    ^ here\n"}
+2023-05-21 19:29:29,140 p=55354 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************************************************
+2023-05-21 19:29:29,140 p=55354 u=isrealurephu n=ansible | 209.38.196.182             : ok=7    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:29:29,140 p=55354 u=isrealurephu n=ansible | 209.38.196.186             : ok=7    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:38:36,819 p=56127 u=isrealurephu n=ansible | PLAY [install java and net-tools] *************************************************************************************************
+2023-05-21 19:38:36,825 p=56127 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:38:40,985 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:38:41,609 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:38:41,630 p=56127 u=isrealurephu n=ansible | TASK [Update reposistory] *********************************************************************************************************
+2023-05-21 19:38:56,895 p=56127 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 19:39:00,467 p=56127 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 19:39:00,475 p=56127 u=isrealurephu n=ansible | TASK [Java 8 installation] ********************************************************************************************************
+2023-05-21 19:39:02,959 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:39:03,386 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:39:03,424 p=56127 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] *************************************************************************
+2023-05-21 19:39:03,428 p=56127 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************************************************
+2023-05-21 19:39:05,883 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:39:06,517 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:39:06,538 p=56127 u=isrealurephu n=ansible | TASK [Download Nexus] *************************************************************************************************************
+2023-05-21 19:39:12,211 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:39:13,395 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:39:13,404 p=56127 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ******************************************************************************************************
+2023-05-21 19:39:21,063 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:39:23,573 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:39:23,584 p=56127 u=isrealurephu n=ansible | TASK [find nexus folder] **********************************************************************************************************
+2023-05-21 19:39:24,982 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 19:39:25,064 p=56127 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 19:39:25,074 p=56127 u=isrealurephu n=ansible | TASK [rename nexus folder] ********************************************************************************************************
+2023-05-21 19:39:26,291 p=56127 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 19:39:26,501 p=56127 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 19:39:26,539 p=56127 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************************************************
+2023-05-21 19:39:26,539 p=56127 u=isrealurephu n=ansible | 209.38.196.182             : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 19:39:26,539 p=56127 u=isrealurephu n=ansible | 209.38.196.186             : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 20:00:02,212 p=57697 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-21 20:00:02,219 p=57697 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-21 20:00:07,447 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:00:08,042 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:00:08,063 p=57697 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-21 20:00:10,496 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:00:11,240 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:00:11,250 p=57697 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-21 20:00:14,190 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:00:15,032 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:00:15,071 p=57697 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-21 20:00:15,076 p=57697 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-21 20:00:18,283 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:00:18,430 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:00:18,449 p=57697 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-21 20:00:24,095 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:00:39,509 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:00:39,522 p=57697 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-21 20:00:49,286 p=57697 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 20:00:52,091 p=57697 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 20:00:52,101 p=57697 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-21 20:00:53,611 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:00:53,611 p=57697 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:00:53,620 p=57697 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-21 20:00:54,944 p=57697 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 20:00:55,107 p=57697 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 20:00:55,144 p=57697 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-21 20:00:55,145 p=57697 u=isrealurephu n=ansible | 209.38.196.182             : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 20:00:55,145 p=57697 u=isrealurephu n=ansible | 209.38.196.186             : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-21 20:03:55,402 p=58136 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-21 20:03:55,408 p=58136 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-21 20:03:59,966 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:04:02,533 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:04:02,556 p=58136 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-21 20:04:05,197 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:04:05,941 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:04:05,952 p=58136 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-21 20:04:08,605 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:04:09,721 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:04:09,756 p=58136 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-21 20:04:09,761 p=58136 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-21 20:04:12,232 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:04:13,365 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:04:13,387 p=58136 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-21 20:04:20,120 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:04:21,153 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:04:21,160 p=58136 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-21 20:04:32,656 p=58136 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-21 20:04:33,144 p=58136 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-21 20:04:33,150 p=58136 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-21 20:04:35,110 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-21 20:04:35,800 p=58136 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-21 20:04:35,811 p=58136 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-21 20:04:37,177 p=58136 u=isrealurephu n=ansible | fatal: [209.38.196.186]: FAILED! => {"changed": true, "cmd": "mv /opt/nexus-3.54.1-01 /opt/nexus", "delta": "0:00:00.045109", "end": "2023-05-21 19:04:37.041008", "msg": "non-zero return code", "rc": 1, "start": "2023-05-21 19:04:36.995899", "stderr": "mv: cannot move '/opt/nexus-3.54.1-01' to '/opt/nexus/nexus-3.54.1-01': Directory not empty", "stderr_lines": ["mv: cannot move '/opt/nexus-3.54.1-01' to '/opt/nexus/nexus-3.54.1-01': Directory not empty"], "stdout": "", "stdout_lines": []}
+2023-05-21 20:04:38,843 p=58136 u=isrealurephu n=ansible | fatal: [209.38.196.182]: FAILED! => {"changed": true, "cmd": "mv /opt/nexus-3.54.1-01 /opt/nexus", "delta": "0:00:00.009546", "end": "2023-05-21 19:04:38.313916", "msg": "non-zero return code", "rc": 1, "start": "2023-05-21 19:04:38.304370", "stderr": "mv: cannot move '/opt/nexus-3.54.1-01' to '/opt/nexus/nexus-3.54.1-01': Directory not empty", "stderr_lines": ["mv: cannot move '/opt/nexus-3.54.1-01' to '/opt/nexus/nexus-3.54.1-01': Directory not empty"], "stdout": "", "stdout_lines": []}
+2023-05-21 20:04:38,844 p=58136 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-21 20:04:38,844 p=58136 u=isrealurephu n=ansible | 209.38.196.182             : ok=7    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-21 20:04:38,844 p=58136 u=isrealurephu n=ansible | 209.38.196.186             : ok=7    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
