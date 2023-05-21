@@ -36,8 +36,17 @@
       file_type: directory
     register: find_result
 
+   
+  - name: check if nexus folder already exists
+    stat:
+      path: /opt/nexus
+    register: stat_result
+
+  - debug: msg={{stat_result.stat.exists}}
+
       
 
   - name: rename nexus folder 
     shell: mv {{find_result.files[0].path}} /opt/nexus
+    when: not stat_result.stat.exists
   
