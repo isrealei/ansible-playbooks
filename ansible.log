@@ -1453,3 +1453,568 @@ Should be written as:
 2023-05-21 20:17:00,475 p=59490 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
 2023-05-21 20:17:00,475 p=59490 u=isrealurephu n=ansible | 209.38.196.182             : ok=9    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
 2023-05-21 20:17:00,475 p=59490 u=isrealurephu n=ansible | 209.38.196.186             : ok=9    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-05-22 00:40:55,207 p=76724 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-22 00:40:55,212 p=76724 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:40:59,479 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:40:59,612 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:40:59,631 p=76724 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-22 00:41:14,466 p=76724 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 00:41:18,585 p=76724 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 00:41:18,595 p=76724 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-22 00:41:20,637 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:41:21,405 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:41:21,443 p=76724 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-22 00:41:21,448 p=76724 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:41:23,875 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:41:24,082 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:41:24,102 p=76724 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-22 00:41:29,500 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:41:31,791 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:41:31,804 p=76724 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-22 00:41:39,407 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:41:40,463 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:41:40,472 p=76724 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-22 00:41:41,757 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:41:41,945 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:41:41,956 p=76724 u=isrealurephu n=ansible | TASK [check if nexus folder already exists] ********************************************************************************************
+2023-05-22 00:41:43,142 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:41:43,234 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:41:43,244 p=76724 u=isrealurephu n=ansible | TASK [debug] ***************************************************************************************************************************
+2023-05-22 00:41:43,262 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.182] => {
+    "msg": true
+}
+2023-05-22 00:41:43,268 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.186] => {
+    "msg": true
+}
+2023-05-22 00:41:43,273 p=76724 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-22 00:41:43,283 p=76724 u=isrealurephu n=ansible | skipping: [209.38.196.182]
+2023-05-22 00:41:43,288 p=76724 u=isrealurephu n=ansible | skipping: [209.38.196.186]
+2023-05-22 00:41:43,309 p=76724 u=isrealurephu n=ansible | PLAY [Create Nexus user to own its own folders] ****************************************************************************************
+2023-05-22 00:41:43,312 p=76724 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:41:45,633 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:41:46,092 p=76724 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:41:46,112 p=76724 u=isrealurephu n=ansible | TASK [create nexus group] **************************************************************************************************************
+2023-05-22 00:41:47,389 p=76724 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 00:41:47,529 p=76724 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 00:41:47,537 p=76724 u=isrealurephu n=ansible | TASK [create nexus user] ***************************************************************************************************************
+2023-05-22 00:41:48,981 p=76724 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 00:41:49,130 p=76724 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 00:41:49,138 p=76724 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 00:41:51,374 p=76724 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 00:41:51,764 p=76724 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 00:41:51,774 p=76724 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 00:41:53,006 p=76724 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 00:41:53,034 p=76724 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 00:41:53,064 p=76724 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-22 00:41:53,064 p=76724 u=isrealurephu n=ansible | 209.38.196.182             : ok=14   changed=5    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-05-22 00:41:53,064 p=76724 u=isrealurephu n=ansible | 209.38.196.186             : ok=14   changed=5    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-05-22 00:48:08,485 p=77478 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-22 00:48:08,491 p=77478 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:48:12,206 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:13,290 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:13,310 p=77478 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-22 00:48:15,637 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:16,095 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:16,104 p=77478 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-22 00:48:19,145 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:19,682 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:19,725 p=77478 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-22 00:48:19,729 p=77478 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:48:23,015 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:23,262 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:23,286 p=77478 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-22 00:48:28,919 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:32,580 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:32,594 p=77478 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-22 00:48:43,493 p=77478 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 00:48:45,943 p=77478 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 00:48:45,955 p=77478 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-22 00:48:47,402 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:47,517 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:47,530 p=77478 u=isrealurephu n=ansible | TASK [check if nexus folder already exists] ********************************************************************************************
+2023-05-22 00:48:48,805 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:48,845 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:48,857 p=77478 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-22 00:48:48,873 p=77478 u=isrealurephu n=ansible | skipping: [209.38.196.182]
+2023-05-22 00:48:48,879 p=77478 u=isrealurephu n=ansible | skipping: [209.38.196.186]
+2023-05-22 00:48:48,915 p=77478 u=isrealurephu n=ansible | PLAY [Create Nexus user to own its own folders] ****************************************************************************************
+2023-05-22 00:48:48,918 p=77478 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:48:51,348 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:51,728 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:51,754 p=77478 u=isrealurephu n=ansible | TASK [create nexus group] **************************************************************************************************************
+2023-05-22 00:48:52,996 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:53,130 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:53,143 p=77478 u=isrealurephu n=ansible | TASK [create nexus user] ***************************************************************************************************************
+2023-05-22 00:48:54,572 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:54,609 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:54,615 p=77478 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 00:48:56,517 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:48:57,447 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:48:57,461 p=77478 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 00:48:58,659 p=77478 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 00:48:58,748 p=77478 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 00:48:58,777 p=77478 u=isrealurephu n=ansible | PLAY [Start nexus with nexu user] ******************************************************************************************************
+2023-05-22 00:48:58,781 p=77478 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:49:01,178 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:49:01,327 p=77478 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:49:01,341 p=77478 u=isrealurephu n=ansible | TASK [set run_as_user to nexus] ********************************************************************************************************
+2023-05-22 00:49:02,520 p=77478 u=isrealurephu n=ansible | fatal: [209.38.196.182]: FAILED! => {"changed": false, "msg": "Path /opt/nexus/bin/nexus_rc does not exist !", "rc": 257}
+2023-05-22 00:49:02,682 p=77478 u=isrealurephu n=ansible | fatal: [209.38.196.186]: FAILED! => {"changed": false, "msg": "Path /opt/nexus/bin/nexus_rc does not exist !", "rc": 257}
+2023-05-22 00:49:02,684 p=77478 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-22 00:49:02,684 p=77478 u=isrealurephu n=ansible | 209.38.196.182             : ok=14   changed=2    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2023-05-22 00:49:02,684 p=77478 u=isrealurephu n=ansible | 209.38.196.186             : ok=14   changed=2    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2023-05-22 00:50:47,062 p=77966 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-22 00:50:47,067 p=77966 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:50:50,946 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:50:51,643 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:50:51,664 p=77966 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-22 00:50:53,964 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:50:54,294 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:50:54,304 p=77966 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-22 00:50:56,465 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:50:57,045 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:50:57,082 p=77966 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-22 00:50:57,087 p=77966 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:50:59,424 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:50:59,745 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:50:59,764 p=77966 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-22 00:51:05,455 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:51:08,850 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:51:08,863 p=77966 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-22 00:51:19,432 p=77966 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 00:51:24,182 p=77966 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 00:51:24,192 p=77966 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-22 00:51:25,534 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:51:25,618 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:51:25,624 p=77966 u=isrealurephu n=ansible | TASK [check if nexus folder already exists] ********************************************************************************************
+2023-05-22 00:51:26,768 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:51:26,998 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:51:27,007 p=77966 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-22 00:51:27,020 p=77966 u=isrealurephu n=ansible | skipping: [209.38.196.182]
+2023-05-22 00:51:27,026 p=77966 u=isrealurephu n=ansible | skipping: [209.38.196.186]
+2023-05-22 00:51:27,049 p=77966 u=isrealurephu n=ansible | PLAY [Create Nexus user to own its own folders] ****************************************************************************************
+2023-05-22 00:51:27,053 p=77966 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:51:29,502 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:51:29,903 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:51:29,925 p=77966 u=isrealurephu n=ansible | TASK [create nexus group] **************************************************************************************************************
+2023-05-22 00:51:31,184 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:51:31,195 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:51:31,202 p=77966 u=isrealurephu n=ansible | TASK [create nexus user] ***************************************************************************************************************
+2023-05-22 00:51:32,532 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:51:32,775 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:51:32,785 p=77966 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 00:51:34,836 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:51:35,842 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:51:35,851 p=77966 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 00:51:37,064 p=77966 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 00:51:37,151 p=77966 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 00:51:37,184 p=77966 u=isrealurephu n=ansible | PLAY [Start nexus with nexu user] ******************************************************************************************************
+2023-05-22 00:51:37,188 p=77966 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 00:51:39,378 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 00:51:39,855 p=77966 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 00:51:39,890 p=77966 u=isrealurephu n=ansible | TASK [set run_as_user to nexus] ********************************************************************************************************
+2023-05-22 00:51:41,113 p=77966 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 00:51:41,192 p=77966 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 00:51:41,220 p=77966 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-22 00:51:41,220 p=77966 u=isrealurephu n=ansible | 209.38.196.182             : ok=15   changed=3    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-05-22 00:51:41,220 p=77966 u=isrealurephu n=ansible | 209.38.196.186             : ok=15   changed=3    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-05-22 01:02:53,377 p=79080 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-22 01:02:53,382 p=79080 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:02:57,333 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:02:57,647 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:02:57,667 p=79080 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-22 01:02:59,804 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:00,028 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:00,036 p=79080 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-22 01:03:02,264 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:02,759 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:02,798 p=79080 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-22 01:03:02,802 p=79080 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:03:05,169 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:05,297 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:05,315 p=79080 u=isrealurephu n=ansible | TASK [check if nexus folder already exists] ********************************************************************************************
+2023-05-22 01:03:06,540 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:06,697 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:06,708 p=79080 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-22 01:03:12,132 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:14,250 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:14,262 p=79080 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-22 01:03:14,278 p=79080 u=isrealurephu n=ansible | skipping: [209.38.196.182]
+2023-05-22 01:03:14,284 p=79080 u=isrealurephu n=ansible | skipping: [209.38.196.186]
+2023-05-22 01:03:14,288 p=79080 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-22 01:03:15,654 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:15,747 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:15,759 p=79080 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-22 01:03:15,774 p=79080 u=isrealurephu n=ansible | skipping: [209.38.196.182]
+2023-05-22 01:03:15,780 p=79080 u=isrealurephu n=ansible | skipping: [209.38.196.186]
+2023-05-22 01:03:15,805 p=79080 u=isrealurephu n=ansible | PLAY [Create Nexus user to own its own folders] ****************************************************************************************
+2023-05-22 01:03:15,809 p=79080 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:03:18,124 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:18,681 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:18,702 p=79080 u=isrealurephu n=ansible | TASK [create nexus group] **************************************************************************************************************
+2023-05-22 01:03:19,915 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:20,046 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:20,051 p=79080 u=isrealurephu n=ansible | TASK [create nexus user] ***************************************************************************************************************
+2023-05-22 01:03:21,497 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:21,498 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:21,504 p=79080 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:03:23,223 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:24,261 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:24,272 p=79080 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:03:25,547 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:25,666 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:25,690 p=79080 u=isrealurephu n=ansible | PLAY [Start nexus with nexu user] ******************************************************************************************************
+2023-05-22 01:03:25,694 p=79080 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:03:28,074 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:28,322 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:28,340 p=79080 u=isrealurephu n=ansible | TASK [set run_as_user to nexus] ********************************************************************************************************
+2023-05-22 01:03:29,564 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:03:29,659 p=79080 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:03:29,695 p=79080 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-22 01:03:29,695 p=79080 u=isrealurephu n=ansible | 209.38.196.182             : ok=14   changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-05-22 01:03:29,695 p=79080 u=isrealurephu n=ansible | 209.38.196.186             : ok=14   changed=0    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-05-22 01:07:08,036 p=79628 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-22 01:07:08,040 p=79628 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:07:12,030 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:12,450 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:12,471 p=79628 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-22 01:07:14,881 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:15,016 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:15,024 p=79628 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-22 01:07:17,216 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:17,847 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:17,882 p=79628 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-22 01:07:17,887 p=79628 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:07:20,344 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:20,501 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:20,520 p=79628 u=isrealurephu n=ansible | TASK [check if nexus folder already exists] ********************************************************************************************
+2023-05-22 01:07:21,853 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:21,900 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:21,907 p=79628 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-22 01:07:28,530 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:30,103 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:30,115 p=79628 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-22 01:07:30,131 p=79628 u=isrealurephu n=ansible | skipping: [209.38.196.182]
+2023-05-22 01:07:30,137 p=79628 u=isrealurephu n=ansible | skipping: [209.38.196.186]
+2023-05-22 01:07:30,141 p=79628 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-22 01:07:32,492 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:32,493 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:32,501 p=79628 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-22 01:07:32,515 p=79628 u=isrealurephu n=ansible | skipping: [209.38.196.182]
+2023-05-22 01:07:32,521 p=79628 u=isrealurephu n=ansible | skipping: [209.38.196.186]
+2023-05-22 01:07:32,557 p=79628 u=isrealurephu n=ansible | PLAY [Create Nexus user to own its own folders] ****************************************************************************************
+2023-05-22 01:07:32,560 p=79628 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:07:35,007 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:35,303 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:35,323 p=79628 u=isrealurephu n=ansible | TASK [create nexus group] **************************************************************************************************************
+2023-05-22 01:07:36,897 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:37,049 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:37,060 p=79628 u=isrealurephu n=ansible | TASK [create nexus user] ***************************************************************************************************************
+2023-05-22 01:07:38,479 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:38,596 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:38,607 p=79628 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:07:40,471 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:40,501 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:40,509 p=79628 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:07:41,779 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:41,890 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:41,924 p=79628 u=isrealurephu n=ansible | PLAY [Start nexus with nexu user] ******************************************************************************************************
+2023-05-22 01:07:41,928 p=79628 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:07:44,497 p=79628 u=isrealurephu n=ansible | [WARNING]: Module remote_tmp /home/nexus/.ansible/tmp did not exist and was created with a mode of 0700, this may cause issues when
+running as another user. To avoid this, create the remote_tmp dir with the correct permissions manually
+
+2023-05-22 01:07:44,497 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:07:44,648 p=79628 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:07:44,667 p=79628 u=isrealurephu n=ansible | TASK [set run_as_user to nexus] ********************************************************************************************************
+2023-05-22 01:07:46,141 p=79628 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 01:07:46,266 p=79628 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 01:07:46,279 p=79628 u=isrealurephu n=ansible | TASK [start nexus] *********************************************************************************************************************
+2023-05-22 01:07:48,188 p=79628 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 01:07:48,621 p=79628 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 01:07:48,679 p=79628 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-22 01:07:48,679 p=79628 u=isrealurephu n=ansible | 209.38.196.182             : ok=15   changed=2    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-05-22 01:07:48,679 p=79628 u=isrealurephu n=ansible | 209.38.196.186             : ok=15   changed=2    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-05-22 01:08:07,790 p=79987 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-22 01:08:07,795 p=79987 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:08:10,624 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:10,899 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:10,919 p=79987 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-22 01:08:13,240 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:13,710 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:13,721 p=79987 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-22 01:08:15,860 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:16,447 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:16,484 p=79987 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-22 01:08:16,488 p=79987 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:08:18,924 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:19,325 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:19,346 p=79987 u=isrealurephu n=ansible | TASK [check if nexus folder already exists] ********************************************************************************************
+2023-05-22 01:08:20,649 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:20,754 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:20,763 p=79987 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-22 01:08:26,401 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:28,043 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:28,056 p=79987 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-22 01:08:28,071 p=79987 u=isrealurephu n=ansible | skipping: [209.38.196.182]
+2023-05-22 01:08:28,077 p=79987 u=isrealurephu n=ansible | skipping: [209.38.196.186]
+2023-05-22 01:08:28,082 p=79987 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-22 01:08:29,516 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:29,589 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:29,598 p=79987 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-22 01:08:29,611 p=79987 u=isrealurephu n=ansible | skipping: [209.38.196.182]
+2023-05-22 01:08:29,617 p=79987 u=isrealurephu n=ansible | skipping: [209.38.196.186]
+2023-05-22 01:08:29,640 p=79987 u=isrealurephu n=ansible | PLAY [Create Nexus user to own its own folders] ****************************************************************************************
+2023-05-22 01:08:29,644 p=79987 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:08:32,216 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:32,377 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:32,393 p=79987 u=isrealurephu n=ansible | TASK [create nexus group] **************************************************************************************************************
+2023-05-22 01:08:33,573 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:33,815 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:33,826 p=79987 u=isrealurephu n=ansible | TASK [create nexus user] ***************************************************************************************************************
+2023-05-22 01:08:35,224 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:35,438 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:35,448 p=79987 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:08:37,497 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:38,325 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:38,335 p=79987 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:08:39,616 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:39,641 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:39,670 p=79987 u=isrealurephu n=ansible | PLAY [Start nexus with nexu user] ******************************************************************************************************
+2023-05-22 01:08:39,674 p=79987 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:08:42,175 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:42,443 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:42,459 p=79987 u=isrealurephu n=ansible | TASK [set run_as_user to nexus] ********************************************************************************************************
+2023-05-22 01:08:43,962 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.182]
+2023-05-22 01:08:44,054 p=79987 u=isrealurephu n=ansible | ok: [209.38.196.186]
+2023-05-22 01:08:44,066 p=79987 u=isrealurephu n=ansible | TASK [start nexus] *********************************************************************************************************************
+2023-05-22 01:08:45,813 p=79987 u=isrealurephu n=ansible | changed: [209.38.196.182]
+2023-05-22 01:08:46,021 p=79987 u=isrealurephu n=ansible | changed: [209.38.196.186]
+2023-05-22 01:08:46,057 p=79987 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-22 01:08:46,057 p=79987 u=isrealurephu n=ansible | 209.38.196.182             : ok=15   changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-05-22 01:08:46,058 p=79987 u=isrealurephu n=ansible | 209.38.196.186             : ok=15   changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-05-22 01:25:42,102 p=81409 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-22 01:25:42,108 p=81409 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:25:44,963 p=81409 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:25:44,975 p=81409 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-22 01:25:46,280 p=81409 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:25:46,288 p=81409 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-22 01:26:00,788 p=81409 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:00,815 p=81409 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-22 01:26:00,821 p=81409 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:26:02,899 p=81409 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:02,915 p=81409 u=isrealurephu n=ansible | TASK [check if nexus folder already exists] ********************************************************************************************
+2023-05-22 01:26:04,839 p=81409 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:04,850 p=81409 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-22 01:26:07,573 p=81409 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:07,578 p=81409 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-22 01:26:14,651 p=81409 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:14,661 p=81409 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-22 01:26:15,519 p=81409 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:15,527 p=81409 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-22 01:26:16,374 p=81409 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:16,398 p=81409 u=isrealurephu n=ansible | PLAY [Create Nexus user to own its own folders] ****************************************************************************************
+2023-05-22 01:26:16,404 p=81409 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:26:18,043 p=81409 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:18,055 p=81409 u=isrealurephu n=ansible | TASK [create nexus group] **************************************************************************************************************
+2023-05-22 01:26:18,958 p=81409 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:18,965 p=81409 u=isrealurephu n=ansible | TASK [create nexus user] ***************************************************************************************************************
+2023-05-22 01:26:19,914 p=81409 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:19,921 p=81409 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:26:20,886 p=81409 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:20,894 p=81409 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:26:21,678 p=81409 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:21,700 p=81409 u=isrealurephu n=ansible | PLAY [Start nexus with nexu user] ******************************************************************************************************
+2023-05-22 01:26:21,706 p=81409 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:26:23,310 p=81409 u=isrealurephu n=ansible | [WARNING]: Module remote_tmp /home/nexus/.ansible/tmp did not exist and was created with a mode of 0700, this may cause issues when
+running as another user. To avoid this, create the remote_tmp dir with the correct permissions manually
+
+2023-05-22 01:26:23,311 p=81409 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:23,323 p=81409 u=isrealurephu n=ansible | TASK [set run_as_user to nexus] ********************************************************************************************************
+2023-05-22 01:26:24,311 p=81409 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:24,321 p=81409 u=isrealurephu n=ansible | TASK [start nexus] *********************************************************************************************************************
+2023-05-22 01:26:25,468 p=81409 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:25,489 p=81409 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-22 01:26:25,489 p=81409 u=isrealurephu n=ansible | 134.122.96.41              : ok=17   changed=10   unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-22 01:26:33,812 p=81641 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-22 01:26:33,817 p=81641 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:26:36,395 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:36,408 p=81641 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-22 01:26:38,305 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:38,315 p=81641 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-22 01:26:40,271 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:40,291 p=81641 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-22 01:26:40,297 p=81641 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:26:42,019 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:42,031 p=81641 u=isrealurephu n=ansible | TASK [check if nexus folder already exists] ********************************************************************************************
+2023-05-22 01:26:43,048 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:43,055 p=81641 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-22 01:26:46,488 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:46,496 p=81641 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-22 01:26:46,510 p=81641 u=isrealurephu n=ansible | skipping: [134.122.96.41]
+2023-05-22 01:26:46,514 p=81641 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-22 01:26:47,381 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:47,387 p=81641 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-22 01:26:47,399 p=81641 u=isrealurephu n=ansible | skipping: [134.122.96.41]
+2023-05-22 01:26:47,411 p=81641 u=isrealurephu n=ansible | PLAY [Create Nexus user to own its own folders] ****************************************************************************************
+2023-05-22 01:26:47,415 p=81641 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:26:49,722 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:49,736 p=81641 u=isrealurephu n=ansible | TASK [create nexus group] **************************************************************************************************************
+2023-05-22 01:26:51,026 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:51,034 p=81641 u=isrealurephu n=ansible | TASK [create nexus user] ***************************************************************************************************************
+2023-05-22 01:26:52,480 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:52,488 p=81641 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:26:53,903 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:53,912 p=81641 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:26:55,018 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:55,040 p=81641 u=isrealurephu n=ansible | PLAY [Start nexus with nexu user] ******************************************************************************************************
+2023-05-22 01:26:55,045 p=81641 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:26:57,197 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:57,211 p=81641 u=isrealurephu n=ansible | TASK [set run_as_user to nexus] ********************************************************************************************************
+2023-05-22 01:26:58,493 p=81641 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:26:58,502 p=81641 u=isrealurephu n=ansible | TASK [start nexus] *********************************************************************************************************************
+2023-05-22 01:26:59,938 p=81641 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:26:59,958 p=81641 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-22 01:26:59,958 p=81641 u=isrealurephu n=ansible | 134.122.96.41              : ok=15   changed=1    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-05-22 01:38:46,778 p=82614 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-22 01:38:46,783 p=82614 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:38:49,387 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:38:49,399 p=82614 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-22 01:38:50,710 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:38:50,718 p=82614 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-22 01:38:52,209 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:38:52,229 p=82614 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-22 01:38:52,235 p=82614 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:38:53,864 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:38:53,877 p=82614 u=isrealurephu n=ansible | TASK [check if nexus folder already exists] ********************************************************************************************
+2023-05-22 01:38:54,775 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:38:54,786 p=82614 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-22 01:38:57,533 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:38:57,542 p=82614 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-22 01:38:57,558 p=82614 u=isrealurephu n=ansible | skipping: [134.122.96.41]
+2023-05-22 01:38:57,563 p=82614 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-22 01:38:58,448 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:38:58,458 p=82614 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-22 01:38:58,474 p=82614 u=isrealurephu n=ansible | skipping: [134.122.96.41]
+2023-05-22 01:38:58,488 p=82614 u=isrealurephu n=ansible | PLAY [Create Nexus user to own its own folders] ****************************************************************************************
+2023-05-22 01:38:58,492 p=82614 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:39:00,112 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:39:00,125 p=82614 u=isrealurephu n=ansible | TASK [create nexus group] **************************************************************************************************************
+2023-05-22 01:39:00,972 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:39:00,981 p=82614 u=isrealurephu n=ansible | TASK [create nexus user] ***************************************************************************************************************
+2023-05-22 01:39:02,007 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:39:02,016 p=82614 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:39:03,001 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:39:03,009 p=82614 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:39:03,863 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:39:03,884 p=82614 u=isrealurephu n=ansible | PLAY [Start nexus with nexu user] ******************************************************************************************************
+2023-05-22 01:39:03,889 p=82614 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:39:05,635 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:39:05,647 p=82614 u=isrealurephu n=ansible | TASK [set run_as_user to nexus] ********************************************************************************************************
+2023-05-22 01:39:06,653 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:39:06,663 p=82614 u=isrealurephu n=ansible | TASK [start nexus] *********************************************************************************************************************
+2023-05-22 01:39:07,823 p=82614 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:39:07,831 p=82614 u=isrealurephu n=ansible | TASK [check if nexus is running] *******************************************************************************************************
+2023-05-22 01:39:08,989 p=82614 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:39:08,998 p=82614 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] ***********************************************************************************************************
+2023-05-22 01:39:09,019 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41] => {
+    "msg": [
+        "nexus       5403  172  3.1 5220676 128224 ?      Sl   00:39   0:01 /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -server -Dinstall4j.jvmDir=/usr/lib/jvm/java-8-openjdk-amd64/jre -Dexe4j.moduleName=/opt/nexus/bin/nexus -XX:+UnlockDiagnosticVMOptions -Dinstall4j.launcherId=245 -Dinstall4j.swt=false -Di4jv=0 -Di4jv=0 -Di4jv=0 -Di4jv=0 -Di4jv=0 -Xms2703m -Xmx2703m -XX:MaxDirectMemorySize=2703m -XX:+UnlockDiagnosticVMOptions -XX:+LogVMOutput -XX:LogFile=../sonatype-work/nexus3/log/jvm.log -XX:-OmitStackTraceInFastThrow -Djava.net.preferIPv4Stack=true -Dkaraf.home=. -Dkaraf.base=. -Dkaraf.etc=etc/karaf -Djava.util.logging.config.file=etc/karaf/java.util.logging.properties -Dkaraf.data=../sonatype-work/nexus3 -Dkaraf.log=../sonatype-work/nexus3/log -Djava.io.tmpdir=../sonatype-work/nexus3/tmp -Dkaraf.startLocalConsole=false -Djdk.tls.ephemeralDHKeySize=2048 -Djava.endorsed.dirs=lib/endorsed -Di4j.vpt=true -classpath /opt/nexus/.install4j/i4jruntime.jar:/opt/nexus/lib/boot/nexus-main.jar:/opt/nexus/lib/boot/activation-1.1.1.jar:/opt/nexus/lib/boot/jakarta.xml.bind-api-2.3.3.jar:/opt/nexus/lib/boot/jaxb-runtime-2.3.3.jar:/opt/nexus/lib/boot/txw2-2.3.3.jar:/opt/nexus/lib/boot/istack-commons-runtime-3.0.10.jar:/opt/nexus/lib/boot/org.apache.karaf.main-4.3.9.jar:/opt/nexus/lib/boot/osgi.core-7.0.0.jar:/opt/nexus/lib/boot/org.apache.karaf.specs.activator-4.3.9.jar:/opt/nexus/lib/boot/org.apache.karaf.diagnostic.boot-4.3.9.jar:/opt/nexus/lib/boot/org.apache.karaf.jaas.boot-4.3.9.jar com.install4j.runtime.launcher.UnixLauncher start 9d17dc87 0 0 org.sonatype.nexus.karaf.NexusMain",
+        "root        5444  0.0  0.0   2736   964 pts/1    Ss+  00:39   0:00 /bin/sh -c sudo -H -S -n  -u nexus /bin/sh -c 'echo BECOME-SUCCESS-socbvfnxifpgdddxtopynltfuprucunt ; /usr/bin/python3 /var/tmp/ansible-tmp-1684715947.903278-82783-281282075644004/AnsiballZ_command.py' && sleep 0",
+        "root        5445  0.0  0.1  11060  5092 pts/1    S+   00:39   0:00 sudo -H -S -n -u nexus /bin/sh -c echo BECOME-SUCCESS-socbvfnxifpgdddxtopynltfuprucunt ; /usr/bin/python3 /var/tmp/ansible-tmp-1684715947.903278-82783-281282075644004/AnsiballZ_command.py",
+        "root        5446  0.0  0.0  11060   788 pts/2    Ss   00:39   0:00 sudo -H -S -n -u nexus /bin/sh -c echo BECOME-SUCCESS-socbvfnxifpgdddxtopynltfuprucunt ; /usr/bin/python3 /var/tmp/ansible-tmp-1684715947.903278-82783-281282075644004/AnsiballZ_command.py",
+        "nexus       5447  0.0  0.0   2736   964 pts/2    S+   00:39   0:00 /bin/sh -c echo BECOME-SUCCESS-socbvfnxifpgdddxtopynltfuprucunt ; /usr/bin/python3 /var/tmp/ansible-tmp-1684715947.903278-82783-281282075644004/AnsiballZ_command.py",
+        "nexus       5448  0.0  0.6  35452 24344 pts/2    S+   00:39   0:00 /usr/bin/python3 /var/tmp/ansible-tmp-1684715947.903278-82783-281282075644004/AnsiballZ_command.py",
+        "nexus       5449  0.0  0.0   2736   960 pts/2    S+   00:39   0:00 /bin/sh -c ps aux | grep nexus",
+        "nexus       5450  0.0  0.0  10264  3268 pts/2    R+   00:39   0:00 ps aux",
+        "nexus       5451  0.0  0.0   6852  2068 pts/2    S+   00:39   0:00 grep nexus"
+    ]
+}
+2023-05-22 01:39:09,023 p=82614 u=isrealurephu n=ansible | TASK [check with netstat] **************************************************************************************************************
+2023-05-22 01:39:10,103 p=82614 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:39:10,112 p=82614 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] ***********************************************************************************************************
+2023-05-22 01:39:10,130 p=82614 u=isrealurephu n=ansible | ok: [134.122.96.41] => {
+    "msg": [
+        "Active Internet connections (only servers)",
+        "Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    ",
+        "tcp        0      0 127.0.0.1:43309         0.0.0.0:*               LISTEN      5403/java           ",
+        "tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   ",
+        "tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN      -                   ",
+        "tcp6       0      0 :::22                   :::*                    LISTEN      -                   "
+    ]
+}
+2023-05-22 01:39:10,143 p=82614 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-22 01:39:10,143 p=82614 u=isrealurephu n=ansible | 134.122.96.41              : ok=19   changed=3    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-05-22 01:42:20,179 p=83028 u=isrealurephu n=ansible | PLAY [install java and net-tools] ******************************************************************************************************
+2023-05-22 01:42:20,184 p=83028 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:42:22,850 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:22,862 p=83028 u=isrealurephu n=ansible | TASK [Update reposistory] **************************************************************************************************************
+2023-05-22 01:42:24,276 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:24,283 p=83028 u=isrealurephu n=ansible | TASK [Java 8 installation] *************************************************************************************************************
+2023-05-22 01:42:25,917 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:25,939 p=83028 u=isrealurephu n=ansible | PLAY [changing directory and downloading nexus installer] ******************************************************************************
+2023-05-22 01:42:25,944 p=83028 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:42:27,630 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:27,642 p=83028 u=isrealurephu n=ansible | TASK [check if nexus folder already exists] ********************************************************************************************
+2023-05-22 01:42:28,504 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:28,512 p=83028 u=isrealurephu n=ansible | TASK [Download Nexus] ******************************************************************************************************************
+2023-05-22 01:42:31,347 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:31,356 p=83028 u=isrealurephu n=ansible | TASK [Untar Nexus installer] ***********************************************************************************************************
+2023-05-22 01:42:31,372 p=83028 u=isrealurephu n=ansible | skipping: [134.122.96.41]
+2023-05-22 01:42:31,377 p=83028 u=isrealurephu n=ansible | TASK [find nexus folder] ***************************************************************************************************************
+2023-05-22 01:42:32,220 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:32,229 p=83028 u=isrealurephu n=ansible | TASK [rename nexus folder] *************************************************************************************************************
+2023-05-22 01:42:32,243 p=83028 u=isrealurephu n=ansible | skipping: [134.122.96.41]
+2023-05-22 01:42:32,257 p=83028 u=isrealurephu n=ansible | PLAY [Create Nexus user to own its own folders] ****************************************************************************************
+2023-05-22 01:42:32,262 p=83028 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:42:33,936 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:33,949 p=83028 u=isrealurephu n=ansible | TASK [create nexus group] **************************************************************************************************************
+2023-05-22 01:42:34,811 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:34,820 p=83028 u=isrealurephu n=ansible | TASK [create nexus user] ***************************************************************************************************************
+2023-05-22 01:42:35,747 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:35,755 p=83028 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:42:36,693 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:36,700 p=83028 u=isrealurephu n=ansible | TASK [Make nexus user owner of the nexus folder reccursively] **************************************************************************
+2023-05-22 01:42:37,582 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:37,603 p=83028 u=isrealurephu n=ansible | PLAY [Start nexus with nexu user] ******************************************************************************************************
+2023-05-22 01:42:37,608 p=83028 u=isrealurephu n=ansible | TASK [Gathering Facts] *****************************************************************************************************************
+2023-05-22 01:42:40,288 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:40,300 p=83028 u=isrealurephu n=ansible | TASK [set run_as_user to nexus] ********************************************************************************************************
+2023-05-22 01:42:41,281 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:42:41,291 p=83028 u=isrealurephu n=ansible | TASK [start nexus] *********************************************************************************************************************
+2023-05-22 01:42:42,425 p=83028 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:42:42,432 p=83028 u=isrealurephu n=ansible | TASK [check if nexus is running] *******************************************************************************************************
+2023-05-22 01:42:43,420 p=83028 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:42:43,431 p=83028 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] ***********************************************************************************************************
+2023-05-22 01:42:43,448 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41] => {
+    "msg": [
+        "nexus       5403 31.6 53.3 5558784 2144080 ?     Sl   00:39   1:08 /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -server -Dinstall4j.jvmDir=/usr/lib/jvm/java-8-openjdk-amd64/jre -Dexe4j.moduleName=/opt/nexus/bin/nexus -XX:+UnlockDiagnosticVMOptions -Dinstall4j.launcherId=245 -Dinstall4j.swt=false -Di4jv=0 -Di4jv=0 -Di4jv=0 -Di4jv=0 -Di4jv=0 -Xms2703m -Xmx2703m -XX:MaxDirectMemorySize=2703m -XX:+UnlockDiagnosticVMOptions -XX:+LogVMOutput -XX:LogFile=../sonatype-work/nexus3/log/jvm.log -XX:-OmitStackTraceInFastThrow -Djava.net.preferIPv4Stack=true -Dkaraf.home=. -Dkaraf.base=. -Dkaraf.etc=etc/karaf -Djava.util.logging.config.file=etc/karaf/java.util.logging.properties -Dkaraf.data=../sonatype-work/nexus3 -Dkaraf.log=../sonatype-work/nexus3/log -Djava.io.tmpdir=../sonatype-work/nexus3/tmp -Dkaraf.startLocalConsole=false -Djdk.tls.ephemeralDHKeySize=2048 -Djava.endorsed.dirs=lib/endorsed -Di4j.vpt=true -classpath /opt/nexus/.install4j/i4jruntime.jar:/opt/nexus/lib/boot/nexus-main.jar:/opt/nexus/lib/boot/activation-1.1.1.jar:/opt/nexus/lib/boot/jakarta.xml.bind-api-2.3.3.jar:/opt/nexus/lib/boot/jaxb-runtime-2.3.3.jar:/opt/nexus/lib/boot/txw2-2.3.3.jar:/opt/nexus/lib/boot/istack-commons-runtime-3.0.10.jar:/opt/nexus/lib/boot/org.apache.karaf.main-4.3.9.jar:/opt/nexus/lib/boot/osgi.core-7.0.0.jar:/opt/nexus/lib/boot/org.apache.karaf.specs.activator-4.3.9.jar:/opt/nexus/lib/boot/org.apache.karaf.diagnostic.boot-4.3.9.jar:/opt/nexus/lib/boot/org.apache.karaf.jaas.boot-4.3.9.jar com.install4j.runtime.launcher.UnixLauncher start 9d17dc87 0 0 org.sonatype.nexus.karaf.NexusMain",
+        "root        6570  0.0  0.0   2736   964 pts/1    Ss+  00:42   0:00 /bin/sh -c sudo -H -S -n  -u nexus /bin/sh -c 'echo BECOME-SUCCESS-trlpwyhdkvjshsrhxmakrxzktifmdvbe ; /usr/bin/python3 /var/tmp/ansible-tmp-1684716162.545546-83197-265775160762806/AnsiballZ_command.py' && sleep 0",
+        "root        6571  0.0  0.1  11056  5116 pts/1    S+   00:42   0:00 sudo -H -S -n -u nexus /bin/sh -c echo BECOME-SUCCESS-trlpwyhdkvjshsrhxmakrxzktifmdvbe ; /usr/bin/python3 /var/tmp/ansible-tmp-1684716162.545546-83197-265775160762806/AnsiballZ_command.py",
+        "root        6572  0.0  0.0  11056   784 pts/2    Ss   00:42   0:00 sudo -H -S -n -u nexus /bin/sh -c echo BECOME-SUCCESS-trlpwyhdkvjshsrhxmakrxzktifmdvbe ; /usr/bin/python3 /var/tmp/ansible-tmp-1684716162.545546-83197-265775160762806/AnsiballZ_command.py",
+        "nexus       6573  0.0  0.0   2736   964 pts/2    S+   00:42   0:00 /bin/sh -c echo BECOME-SUCCESS-trlpwyhdkvjshsrhxmakrxzktifmdvbe ; /usr/bin/python3 /var/tmp/ansible-tmp-1684716162.545546-83197-265775160762806/AnsiballZ_command.py",
+        "nexus       6574  0.0  0.6  35452 24372 pts/2    S+   00:42   0:00 /usr/bin/python3 /var/tmp/ansible-tmp-1684716162.545546-83197-265775160762806/AnsiballZ_command.py",
+        "nexus       6575  0.0  0.0   2736   964 pts/2    S+   00:42   0:00 /bin/sh -c ps aux | grep nexus",
+        "nexus       6576  0.0  0.0  10264  3256 pts/2    R+   00:42   0:00 ps aux",
+        "nexus       6577  0.0  0.0   6852  2076 pts/2    R+   00:42   0:00 grep nexus"
+    ]
+}
+2023-05-22 01:42:43,455 p=83028 u=isrealurephu n=ansible | TASK [wait for one minute] *************************************************************************************************************
+2023-05-22 01:42:43,463 p=83028 u=isrealurephu n=ansible | Pausing for 60 seconds
+2023-05-22 01:42:43,464 p=83028 u=isrealurephu n=ansible | (ctrl+C then 'C' = continue early, ctrl+C then 'A' = abort)
+2023-05-22 01:43:43,479 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41]
+2023-05-22 01:43:43,489 p=83028 u=isrealurephu n=ansible | TASK [check with netstat] **************************************************************************************************************
+2023-05-22 01:43:45,144 p=83028 u=isrealurephu n=ansible | changed: [134.122.96.41]
+2023-05-22 01:43:45,152 p=83028 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] ***********************************************************************************************************
+2023-05-22 01:43:45,171 p=83028 u=isrealurephu n=ansible | ok: [134.122.96.41] => {
+    "msg": [
+        "Active Internet connections (only servers)",
+        "Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    ",
+        "tcp        0      0 127.0.0.1:43309         0.0.0.0:*               LISTEN      5403/java           ",
+        "tcp        0      0 0.0.0.0:8081            0.0.0.0:*               LISTEN      5403/java           ",
+        "tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN      -                   ",
+        "tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN      -                   ",
+        "tcp6       0      0 :::22                   :::*                    LISTEN      -                   "
+    ]
+}
+2023-05-22 01:43:45,184 p=83028 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
+2023-05-22 01:43:45,184 p=83028 u=isrealurephu n=ansible | 134.122.96.41              : ok=20   changed=3    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   

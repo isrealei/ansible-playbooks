@@ -1,6 +1,6 @@
 ---
 - name: install java and net-tools
-  hosts: droplet_websrvers
+  hosts: nexus_server
   tasks:
   - name: Update reposistory
     apt: cache_valid_time=3600 update_cache=yes force_apt_get=yes
@@ -11,9 +11,16 @@
       - openjdk-8-jre-headless
       - net-tools
 
+
 - name: changing directory and downloading nexus installer
-  hosts: droplet_websrvers
+  hosts: nexus_server
   tasks:
+  - name: check if nexus folder already exists
+    stat:
+      path: /opt/nexus
+    register: stat_result
+
+
   - name: Download Nexus
     get_url:
       url: https://download.sonatype.com/nexus/3/latest-unix.tar.gz
@@ -27,6 +34,8 @@
      src: "{{download_result.dest}}"
      dest: /opt/
      remote_src: true
+    when: not stat_result.stat.exists
+
 
   - name: find nexus folder
     find: 
@@ -34,19 +43,76 @@
         - /opt/
       pattern: "nexus-*"
       file_type: directory
-    register: find_result
-
-   
-  - name: check if nexus folder already exists
-    stat:
-      path: /opt/nexus
-    register: stat_result
-
-  - debug: msg={{stat_result.stat.exists}}
-
-      
-
+    register: find_result 
+ 
   - name: rename nexus folder 
     shell: mv {{find_result.files[0].path}} /opt/nexus
     when: not stat_result.stat.exists
+
+
+- name: Create Nexus user to own its own folders
+  hosts: nexus_server
+  tasks:
+  - name: create nexus group
+    ansible.builtin.group:
+      name: nexus
+      state: present
+  - name: create nexus user
+    ansible.builtin.user:
+      name: nexus
+      state: present
+      group: nexus
+  - name: Make nexus user owner of the nexus folder reccursively
+    file:
+     path: /opt/nexus
+     state: directory
+     owner: nexus
+     group: nexus
+     recurse: yes
+  - name: Make nexus user owner of the nexus folder reccursively
+    file:
+     path: /opt/sonatype-work
+     state: directory
+     owner: nexus
+     group: nexus
+     recurse: yes
+
+- name: Start nexus with nexu user
+  hosts: nexus_server
+  become: true
+  become_user: nexus
+  tasks:
+  - name: set run_as_user to nexus
+    ansible.builtin.blockinfile:
+      path: /opt/nexus/bin/nexus.rc
+      block: |
+       run_as_user="nexus"
+
+  - name: start nexus
+    ansible.builtin.command: /opt/nexus/bin/nexus start
+
+  - name: check if nexus is running
+    shell: ps aux | grep nexus
+    register:  nexus_status
+  
+  - ansible.builtin.debug: msg={{nexus_status.stdout_lines}}
+
+  - name: wait for one minute
+    pause:
+      minutes: 1
+
+  - name: check with netstat
+    shell: netstat -plnt
+    register: telnet_status
+  - ansible.builtin.debug: msg={{telnet_status.stdout_lines}}
+      
+      
+      
+    
+         
+
+     
+    
+      
+    
   

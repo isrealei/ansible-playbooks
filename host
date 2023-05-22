@@ -2,6 +2,9 @@
 209.38.196.182 
 209.38.196.186 
 
+[nexus_server]
+134.122.96.41
+
 [aws_instances]
 3.84.10.202  
 
@@ -10,6 +13,10 @@
 
 
 [droplet_websrvers:vars]
+ansible_ssh_private_key_file=/Users/isrealurephu/.ssh/id_rsa
+ansible_user=root
+
+[nexus_server:vars]
 ansible_ssh_private_key_file=/Users/isrealurephu/.ssh/id_rsa
 ansible_user=root
 
