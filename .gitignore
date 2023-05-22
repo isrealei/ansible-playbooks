@@ -1,3 +1,4 @@
 droplet
 droplet.pub
-git 
+terraform.tfstate
+terraform.tfvars

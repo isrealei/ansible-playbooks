@@ -2018,3 +2018,76 @@ running as another user. To avoid this, create the remote_tmp dir with the corre
 }
 2023-05-22 01:43:45,184 p=83028 u=isrealurephu n=ansible | PLAY RECAP *****************************************************************************************************************************
 2023-05-22 01:43:45,184 p=83028 u=isrealurephu n=ansible | 134.122.96.41              : ok=20   changed=3    unreachable=0    failed=0    skipped=2    rescued=0    ignored=0   
+2023-05-22 02:18:45,130 p=86097 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.207.72.52 is using the discovered Python interpreter at
+/usr/bin/python3.7, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-22 02:18:45,131 p=86097 u=isrealurephu n=ansible | 34.207.72.52 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3.7"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-05-22 02:27:36,339 p=86882 u=isrealurephu n=ansible | PLAY [install docker] ***********************************************************************
+2023-05-22 02:27:36,345 p=86882 u=isrealurephu n=ansible | TASK [Gathering Facts] **********************************************************************
+2023-05-22 02:27:41,621 p=86882 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.207.72.52 is using the discovered Python interpreter at
+/usr/bin/python3.7, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-22 02:27:41,621 p=86882 u=isrealurephu n=ansible | ok: [34.207.72.52]
+2023-05-22 02:27:41,635 p=86882 u=isrealurephu n=ansible | TASK [yum] **********************************************************************************
+2023-05-22 02:27:59,641 p=86882 u=isrealurephu n=ansible | changed: [34.207.72.52]
+2023-05-22 02:27:59,657 p=86882 u=isrealurephu n=ansible | PLAY RECAP **********************************************************************************
+2023-05-22 02:27:59,659 p=86882 u=isrealurephu n=ansible | 34.207.72.52               : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-22 02:29:04,788 p=87029 u=isrealurephu n=ansible | PLAY [install docker] ***********************************************************************
+2023-05-22 02:29:04,794 p=87029 u=isrealurephu n=ansible | TASK [Gathering Facts] **********************************************************************
+2023-05-22 02:29:09,637 p=87029 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.207.72.52 is using the discovered Python interpreter at
+/usr/bin/python3.7, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-22 02:29:09,637 p=87029 u=isrealurephu n=ansible | ok: [34.207.72.52]
+2023-05-22 02:29:09,650 p=87029 u=isrealurephu n=ansible | TASK [yum] **********************************************************************************
+2023-05-22 02:29:13,461 p=87029 u=isrealurephu n=ansible | ok: [34.207.72.52]
+2023-05-22 02:29:13,468 p=87029 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] ****************************************************************
+2023-05-22 02:29:13,483 p=87029 u=isrealurephu n=ansible | ok: [34.207.72.52] => {
+    "msg": {
+        "changed": false,
+        "failed": false,
+        "msg": "",
+        "rc": 0,
+        "results": [
+            "docker-20.10.23-1.amzn2.0.1.x86_64 providing docker is already installed"
+        ]
+    }
+}
+2023-05-22 02:29:13,493 p=87029 u=isrealurephu n=ansible | PLAY RECAP **********************************************************************************
+2023-05-22 02:29:13,493 p=87029 u=isrealurephu n=ansible | 34.207.72.52               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-22 02:33:17,110 p=87397 u=isrealurephu n=ansible | PLAY [install docker] ***********************************************************************
+2023-05-22 02:33:17,116 p=87397 u=isrealurephu n=ansible | TASK [Gathering Facts] **********************************************************************
+2023-05-22 02:33:22,165 p=87397 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.207.72.52 is using the discovered Python interpreter at
+/usr/bin/python3.7, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-22 02:33:22,166 p=87397 u=isrealurephu n=ansible | ok: [34.207.72.52]
+2023-05-22 02:33:22,177 p=87397 u=isrealurephu n=ansible | TASK [yum] **********************************************************************************
+2023-05-22 02:33:26,002 p=87397 u=isrealurephu n=ansible | ok: [34.207.72.52]
+2023-05-22 02:33:26,011 p=87397 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] ****************************************************************
+2023-05-22 02:33:26,031 p=87397 u=isrealurephu n=ansible | ok: [34.207.72.52] => {
+    "msg": {
+        "changed": false,
+        "failed": false,
+        "msg": "",
+        "rc": 0,
+        "results": [
+            "docker-20.10.23-1.amzn2.0.1.x86_64 providing docker is already installed",
+            "python3-3.7.16-1.amzn2.0.2.x86_64 providing python3 is already installed"
+        ]
+    }
+}
+2023-05-22 02:33:26,041 p=87397 u=isrealurephu n=ansible | PLAY RECAP **********************************************************************************
+2023-05-22 02:33:26,041 p=87397 u=isrealurephu n=ansible | 34.207.72.52               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

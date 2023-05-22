@@ -1,0 +1,19 @@
+---
+- name: install docker
+  hosts: docker_server
+  become: yes
+  tasks:
+  - name: 
+    yum:
+      name: "{{ packages }}"
+      update_cache: yes
+      state: present
+    vars:
+      packages:
+      - docker
+      - python3
+    register: docker_log
+
+
+      
+

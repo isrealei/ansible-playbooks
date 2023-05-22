@@ -11,6 +11,13 @@
 [linodes]
 139.162.242.60 
 
+[docker_server]
+34.207.72.52
+
+[docker_server:vars]
+ansible_ssh_private_key_file=/Users/isrealurephu/downloads/my-key.pem
+ansible_user=ec2-user
+
 
 [droplet_websrvers:vars]
 ansible_ssh_private_key_file=/Users/isrealurephu/.ssh/id_rsa
