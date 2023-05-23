@@ -2324,3 +2324,320 @@ could change the meaning of that path. See https://docs.ansible.com/ansible-core
 2023-05-23 03:30:36,086 p=64156 u=isrealurephu n=ansible | ok: [34.203.243.225]
 2023-05-23 03:30:36,104 p=64156 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
 2023-05-23 03:30:36,104 p=64156 u=isrealurephu n=ansible | 34.203.243.225             : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:36:21,958 p=64820 u=isrealurephu n=ansible | PLAY [install docker] ****************************************************************************************************************
+2023-05-23 03:36:21,963 p=64820 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:36:26,835 p=64820 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:36:26,835 p=64820 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:36:26,848 p=64820 u=isrealurephu n=ansible | TASK [installing docker and python3] *************************************************************************************************
+2023-05-23 03:36:30,711 p=64820 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:36:30,719 p=64820 u=isrealurephu n=ansible | TASK [start docker service] **********************************************************************************************************
+2023-05-23 03:36:33,495 p=64820 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:36:33,501 p=64820 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] **********************************************************
+2023-05-23 03:36:36,001 p=64820 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in
+Ansible 2.14.
+
+2023-05-23 03:36:36,002 p=64820 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:36:36,019 p=64820 u=isrealurephu n=ansible | PLAY [test docker with an image pull] ************************************************************************************************
+2023-05-23 03:36:36,024 p=64820 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:36:38,953 p=64820 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:36:38,966 p=64820 u=isrealurephu n=ansible | TASK [pull and run an image] *********************************************************************************************************
+2023-05-23 03:36:41,639 p=64820 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": true, "cmd": "docker run  -p -d  80:80 nginx", "delta": "0:00:00.023883", "end": "2023-05-23 02:36:41.341380", "msg": "non-zero return code", "rc": 125, "start": "2023-05-23 02:36:41.317497", "stderr": "docker: Invalid containerPort: -d.\nSee 'docker run --help'.", "stderr_lines": ["docker: Invalid containerPort: -d.", "See 'docker run --help'."], "stdout": "", "stdout_lines": []}
+2023-05-23 03:36:41,641 p=64820 u=isrealurephu n=ansible | PLAY RECAP ***************************************************************************************************************************
+2023-05-23 03:36:41,641 p=64820 u=isrealurephu n=ansible | 34.203.243.225             : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:37:04,913 p=64954 u=isrealurephu n=ansible | PLAY [install docker] ****************************************************************************************************************
+2023-05-23 03:37:04,919 p=64954 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:37:08,629 p=64954 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:37:08,629 p=64954 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:37:08,641 p=64954 u=isrealurephu n=ansible | TASK [installing docker and python3] *************************************************************************************************
+2023-05-23 03:37:12,425 p=64954 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:37:12,434 p=64954 u=isrealurephu n=ansible | TASK [start docker service] **********************************************************************************************************
+2023-05-23 03:37:15,252 p=64954 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:37:15,256 p=64954 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] **********************************************************
+2023-05-23 03:37:17,747 p=64954 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in
+Ansible 2.14.
+
+2023-05-23 03:37:17,747 p=64954 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:37:17,767 p=64954 u=isrealurephu n=ansible | PLAY [test docker with an image pull] ************************************************************************************************
+2023-05-23 03:37:17,772 p=64954 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:37:20,694 p=64954 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:37:20,707 p=64954 u=isrealurephu n=ansible | TASK [pull and run an image] *********************************************************************************************************
+2023-05-23 03:37:29,642 p=64954 u=isrealurephu n=ansible | changed: [34.203.243.225]
+2023-05-23 03:37:29,659 p=64954 u=isrealurephu n=ansible | PLAY [installing docker compose] *****************************************************************************************************
+2023-05-23 03:37:29,663 p=64954 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:37:32,784 p=64954 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:37:32,796 p=64954 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] *******************************************************************************************
+2023-05-23 03:37:35,542 p=64954 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:37:35,565 p=64954 u=isrealurephu n=ansible | PLAY RECAP ***************************************************************************************************************************
+2023-05-23 03:37:35,565 p=64954 u=isrealurephu n=ansible | 34.203.243.225             : ok=8    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:37:57,958 p=65104 u=isrealurephu n=ansible | PLAY [install docker] ****************************************************************************************************************
+2023-05-23 03:37:57,964 p=65104 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:38:01,777 p=65104 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:38:01,777 p=65104 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:38:01,786 p=65104 u=isrealurephu n=ansible | TASK [installing docker and python3] *************************************************************************************************
+2023-05-23 03:38:05,717 p=65104 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:38:05,726 p=65104 u=isrealurephu n=ansible | TASK [start docker service] **********************************************************************************************************
+2023-05-23 03:38:08,616 p=65104 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:38:08,623 p=65104 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] **********************************************************
+2023-05-23 03:38:11,126 p=65104 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in
+Ansible 2.14.
+
+2023-05-23 03:38:11,126 p=65104 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:38:11,145 p=65104 u=isrealurephu n=ansible | PLAY [test docker with an image pull] ************************************************************************************************
+2023-05-23 03:38:11,149 p=65104 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:38:14,245 p=65104 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:38:14,258 p=65104 u=isrealurephu n=ansible | TASK [pull and run an image] *********************************************************************************************************
+2023-05-23 03:38:16,897 p=65104 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": true, "cmd": "docker run -d -p 80:80 nginx", "delta": "0:00:00.166571", "end": "2023-05-23 02:38:16.605182", "msg": "non-zero return code", "rc": 125, "start": "2023-05-23 02:38:16.438611", "stderr": "docker: Error response from daemon: driver failed programming external connectivity on endpoint crazy_heyrovsky (ae2f2d0528ea9bf309e06387e2b693be509036e4ed45d38bceed658dc46a0559): Bind for 0.0.0.0:80 failed: port is already allocated.", "stderr_lines": ["docker: Error response from daemon: driver failed programming external connectivity on endpoint crazy_heyrovsky (ae2f2d0528ea9bf309e06387e2b693be509036e4ed45d38bceed658dc46a0559): Bind for 0.0.0.0:80 failed: port is already allocated."], "stdout": "e9664b9613ba5cbf915ae7365a1bf8dfc09b5512d16debc7b38f433652fff7d7", "stdout_lines": ["e9664b9613ba5cbf915ae7365a1bf8dfc09b5512d16debc7b38f433652fff7d7"]}
+2023-05-23 03:38:16,899 p=65104 u=isrealurephu n=ansible | PLAY RECAP ***************************************************************************************************************************
+2023-05-23 03:38:16,899 p=65104 u=isrealurephu n=ansible | 34.203.243.225             : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:43:11,522 p=65512 u=isrealurephu n=ansible | PLAY [install docker] ****************************************************************************************************************
+2023-05-23 03:43:11,527 p=65512 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:43:16,941 p=65512 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:43:16,941 p=65512 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:43:16,951 p=65512 u=isrealurephu n=ansible | TASK [installing docker and python3] *************************************************************************************************
+2023-05-23 03:43:21,063 p=65512 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:43:21,072 p=65512 u=isrealurephu n=ansible | TASK [start docker service] **********************************************************************************************************
+2023-05-23 03:43:24,141 p=65512 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:43:24,149 p=65512 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] **********************************************************
+2023-05-23 03:43:26,962 p=65512 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in
+Ansible 2.14.
+
+2023-05-23 03:43:26,962 p=65512 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:43:26,967 p=65512 u=isrealurephu n=ansible | TASK [reconnect for server session] **************************************************************************************************
+2023-05-23 03:43:26,997 p=65512 u=isrealurephu n=ansible | PLAY [test docker with an image pull] ************************************************************************************************
+2023-05-23 03:43:27,000 p=65512 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:43:31,596 p=65512 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:43:31,609 p=65512 u=isrealurephu n=ansible | TASK [pull and run an image] *********************************************************************************************************
+2023-05-23 03:43:34,475 p=65512 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": true, "cmd": "docker run -d -p 80:80 nginx", "delta": "0:00:00.170638", "end": "2023-05-23 02:43:34.107605", "msg": "non-zero return code", "rc": 125, "start": "2023-05-23 02:43:33.936967", "stderr": "docker: Error response from daemon: driver failed programming external connectivity on endpoint zealous_mclean (879163e0ad3e174204e9530be3ad946a875fa0c7c66a79558cbb0b738a0262b3): Bind for 0.0.0.0:80 failed: port is already allocated.", "stderr_lines": ["docker: Error response from daemon: driver failed programming external connectivity on endpoint zealous_mclean (879163e0ad3e174204e9530be3ad946a875fa0c7c66a79558cbb0b738a0262b3): Bind for 0.0.0.0:80 failed: port is already allocated."], "stdout": "be30ab3239000b94a6f0508dc5070318cda0cb7b1ff65def47e4022ae256452f", "stdout_lines": ["be30ab3239000b94a6f0508dc5070318cda0cb7b1ff65def47e4022ae256452f"]}
+2023-05-23 03:43:34,476 p=65512 u=isrealurephu n=ansible | PLAY RECAP ***************************************************************************************************************************
+2023-05-23 03:43:34,477 p=65512 u=isrealurephu n=ansible | 34.203.243.225             : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:48:37,753 p=65952 u=isrealurephu n=ansible | ERROR! 'ansible.builtin.debug' is not a valid attribute for a Play
+
+The error appears to be in '/Users/isrealurephu/bootcamp-projects/ansible/docker-playbook.yaml': line 53, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- ansible.builtin.debug: msg={{check_if_running}}
+  ^ here
+We could be wrong, but this one looks like it might be an issue with
+missing quotes. Always quote template expression brackets when they
+start a value. For instance:
+
+    with_items:
+      - {{ foo }}
+
+Should be written as:
+
+    with_items:
+      - "{{ foo }}"
+
+2023-05-23 03:49:00,536 p=66015 u=isrealurephu n=ansible | PLAY [install docker] ****************************************************************************************************************
+2023-05-23 03:49:00,542 p=66015 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:49:06,150 p=66015 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:49:06,151 p=66015 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:49:06,163 p=66015 u=isrealurephu n=ansible | TASK [installing docker and python3] *************************************************************************************************
+2023-05-23 03:49:10,236 p=66015 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:49:10,244 p=66015 u=isrealurephu n=ansible | TASK [start docker service] **********************************************************************************************************
+2023-05-23 03:49:15,183 p=66015 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:49:15,191 p=66015 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] **********************************************************
+2023-05-23 03:49:18,892 p=66015 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in
+Ansible 2.14.
+
+2023-05-23 03:49:18,893 p=66015 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:49:18,899 p=66015 u=isrealurephu n=ansible | TASK [reconnect for server session] **************************************************************************************************
+2023-05-23 03:49:18,930 p=66015 u=isrealurephu n=ansible | PLAY [test docker with an image pull] ************************************************************************************************
+2023-05-23 03:49:18,933 p=66015 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:49:24,170 p=66015 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:49:24,183 p=66015 u=isrealurephu n=ansible | TASK [pull and run an image] *********************************************************************************************************
+2023-05-23 03:49:27,387 p=66015 u=isrealurephu n=ansible | changed: [34.203.243.225]
+2023-05-23 03:49:27,403 p=66015 u=isrealurephu n=ansible | PLAY [installing docker compose] *****************************************************************************************************
+2023-05-23 03:49:27,408 p=66015 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:49:30,826 p=66015 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:49:30,837 p=66015 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] *******************************************************************************************
+2023-05-23 03:49:33,773 p=66015 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:49:33,782 p=66015 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] *********************************************************************************************************
+2023-05-23 03:49:33,802 p=66015 u=isrealurephu n=ansible | ok: [34.203.243.225] => {
+    "msg": {
+        "changed": false,
+        "dest": "/usr/local/bin/docker-compose",
+        "elapsed": 0,
+        "failed": false,
+        "gid": 0,
+        "group": "root",
+        "mode": "0755",
+        "msg": "HTTP Error 304: Not Modified",
+        "owner": "root",
+        "size": 11748168,
+        "state": "file",
+        "status_code": 304,
+        "uid": 0,
+        "url": "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-linux-x86_64"
+    }
+}
+2023-05-23 03:49:33,813 p=66015 u=isrealurephu n=ansible | PLAY RECAP ***************************************************************************************************************************
+2023-05-23 03:49:33,813 p=66015 u=isrealurephu n=ansible | 34.203.243.225             : ok=9    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:51:45,928 p=66330 u=isrealurephu n=ansible | PLAY [install docker] ****************************************************************************************************************
+2023-05-23 03:51:45,933 p=66330 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:51:50,812 p=66330 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:51:50,812 p=66330 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:51:50,824 p=66330 u=isrealurephu n=ansible | TASK [installing docker and python3] *************************************************************************************************
+2023-05-23 03:51:55,012 p=66330 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:51:55,021 p=66330 u=isrealurephu n=ansible | TASK [start docker service] **********************************************************************************************************
+2023-05-23 03:52:01,134 p=66330 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:52:01,141 p=66330 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] **********************************************************
+2023-05-23 03:52:04,185 p=66330 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in
+Ansible 2.14.
+
+2023-05-23 03:52:04,185 p=66330 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:52:04,191 p=66330 u=isrealurephu n=ansible | TASK [reconnect for server session] **************************************************************************************************
+2023-05-23 03:52:04,223 p=66330 u=isrealurephu n=ansible | PLAY [test docker with an image pull] ************************************************************************************************
+2023-05-23 03:52:04,227 p=66330 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:52:09,039 p=66330 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:52:09,052 p=66330 u=isrealurephu n=ansible | TASK [pull and run an image] *********************************************************************************************************
+2023-05-23 03:52:12,521 p=66330 u=isrealurephu n=ansible | changed: [34.203.243.225]
+2023-05-23 03:52:12,528 p=66330 u=isrealurephu n=ansible | TASK [ansible.builtin.debug] *********************************************************************************************************
+2023-05-23 03:52:12,545 p=66330 u=isrealurephu n=ansible | ok: [34.203.243.225] => {
+    "msg": {
+        "changed": true,
+        "cmd": "docker run -d -p 80:80 nginx",
+        "delta": "0:00:00.546008",
+        "end": "2023-05-23 02:52:12.127915",
+        "failed": false,
+        "msg": "",
+        "rc": 0,
+        "start": "2023-05-23 02:52:11.581907",
+        "stderr": "",
+        "stderr_lines": [],
+        "stdout": "b11ad50b7d701dcc401267ca9d7d7f73c2f6ed9351e7e49f6e5b6dc7215cfa0c",
+        "stdout_lines": [
+            "b11ad50b7d701dcc401267ca9d7d7f73c2f6ed9351e7e49f6e5b6dc7215cfa0c"
+        ]
+    }
+}
+2023-05-23 03:52:12,556 p=66330 u=isrealurephu n=ansible | PLAY [installing docker compose] *****************************************************************************************************
+2023-05-23 03:52:12,559 p=66330 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:52:16,242 p=66330 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:52:16,255 p=66330 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] *******************************************************************************************
+2023-05-23 03:52:19,399 p=66330 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:52:19,418 p=66330 u=isrealurephu n=ansible | PLAY RECAP ***************************************************************************************************************************
+2023-05-23 03:52:19,418 p=66330 u=isrealurephu n=ansible | 34.203.243.225             : ok=9    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:55:06,021 p=66671 u=isrealurephu n=ansible | PLAY [install docker] ****************************************************************************************************************
+2023-05-23 03:55:06,027 p=66671 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:55:11,862 p=66671 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:55:11,862 p=66671 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:55:11,875 p=66671 u=isrealurephu n=ansible | TASK [installing docker and python3] *************************************************************************************************
+2023-05-23 03:55:16,140 p=66671 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:55:16,147 p=66671 u=isrealurephu n=ansible | TASK [start docker service] **********************************************************************************************************
+2023-05-23 03:55:19,410 p=66671 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:55:19,417 p=66671 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] **********************************************************
+2023-05-23 03:55:22,386 p=66671 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in
+Ansible 2.14.
+
+2023-05-23 03:55:22,387 p=66671 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:55:22,394 p=66671 u=isrealurephu n=ansible | TASK [reconnect for server session] **************************************************************************************************
+2023-05-23 03:55:22,426 p=66671 u=isrealurephu n=ansible | PLAY [test docker with an image pull] ************************************************************************************************
+2023-05-23 03:55:22,430 p=66671 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 03:55:26,739 p=66671 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:55:26,751 p=66671 u=isrealurephu n=ansible | TASK [pull and run an image] *********************************************************************************************************
+2023-05-23 03:55:26,763 p=66671 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"msg": "The conditional check 'not check_if_running.failed' failed. The error was: error while evaluating conditional (not check_if_running.failed): 'check_if_running' is undefined. 'check_if_running' is undefined\n\nThe error appears to be in '/Users/isrealurephu/bootcamp-projects/ansible/docker-playbook.yaml': line 37, column 5, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n  tasks:\n  - name: pull and run an image\n    ^ here\n"}
+2023-05-23 03:55:26,764 p=66671 u=isrealurephu n=ansible | PLAY RECAP ***************************************************************************************************************************
+2023-05-23 03:55:26,764 p=66671 u=isrealurephu n=ansible | 34.203.243.225             : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 04:05:54,240 p=67524 u=isrealurephu n=ansible | PLAY [install docker] ****************************************************************************************************************
+2023-05-23 04:05:54,246 p=67524 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 04:06:00,266 p=67524 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 04:06:00,267 p=67524 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:06:00,278 p=67524 u=isrealurephu n=ansible | TASK [installing docker and python3] *************************************************************************************************
+2023-05-23 04:06:05,249 p=67524 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:06:05,257 p=67524 u=isrealurephu n=ansible | TASK [start docker service] **********************************************************************************************************
+2023-05-23 04:06:08,540 p=67524 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:06:08,547 p=67524 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] **********************************************************
+2023-05-23 04:06:11,519 p=67524 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in
+Ansible 2.14.
+
+2023-05-23 04:06:11,519 p=67524 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:06:11,525 p=67524 u=isrealurephu n=ansible | TASK [reconnect for server session] **************************************************************************************************
+2023-05-23 04:06:11,557 p=67524 u=isrealurephu n=ansible | PLAY [test docker with an image pull] ************************************************************************************************
+2023-05-23 04:06:11,562 p=67524 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 04:06:15,793 p=67524 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:06:15,805 p=67524 u=isrealurephu n=ansible | TASK [pull and run an image] *********************************************************************************************************
+2023-05-23 04:06:18,565 p=67524 u=isrealurephu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ModuleNotFoundError: No module named 'requests'
+2023-05-23 04:06:18,566 p=67524 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": false, "msg": "Failed to import the required Python library (requests) on ip-10-0-1-18.ec2.internal's Python /usr/bin/python3.7. Please read the module documentation and install it in the appropriate location. If the required library is installed, but Ansible is using the wrong Python interpreter, please consult the documentation on ansible_python_interpreter"}
+2023-05-23 04:06:18,567 p=67524 u=isrealurephu n=ansible | PLAY RECAP ***************************************************************************************************************************
+2023-05-23 04:06:18,567 p=67524 u=isrealurephu n=ansible | 34.203.243.225             : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 04:12:40,154 p=68083 u=isrealurephu n=ansible | PLAY [install docker] ****************************************************************************************************************
+2023-05-23 04:12:40,160 p=68083 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 04:12:45,697 p=68083 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 04:12:45,697 p=68083 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:12:45,711 p=68083 u=isrealurephu n=ansible | TASK [installing docker and python3] *************************************************************************************************
+2023-05-23 04:12:49,794 p=68083 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:12:49,802 p=68083 u=isrealurephu n=ansible | TASK [start docker service] **********************************************************************************************************
+2023-05-23 04:12:52,835 p=68083 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:12:52,842 p=68083 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] **********************************************************
+2023-05-23 04:12:55,612 p=68083 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in
+Ansible 2.14.
+
+2023-05-23 04:12:55,613 p=68083 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:12:55,620 p=68083 u=isrealurephu n=ansible | TASK [reconnect for server session] **************************************************************************************************
+2023-05-23 04:12:55,661 p=68083 u=isrealurephu n=ansible | PLAY [test docker with an image pull] ************************************************************************************************
+2023-05-23 04:12:55,665 p=68083 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 04:13:00,343 p=68083 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:13:00,351 p=68083 u=isrealurephu n=ansible | TASK [pull and run an image] *********************************************************************************************************
+2023-05-23 04:13:04,143 p=68083 u=isrealurephu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ModuleNotFoundError: No module named 'requests'
+2023-05-23 04:13:04,143 p=68083 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": false, "msg": "Failed to import the required Python library (requests) on ip-10-0-1-18.ec2.internal's Python /usr/bin/python3.7. Please read the module documentation and install it in the appropriate location. If the required library is installed, but Ansible is using the wrong Python interpreter, please consult the documentation on ansible_python_interpreter"}
+2023-05-23 04:13:04,143 p=68083 u=isrealurephu n=ansible | PLAY RECAP ***************************************************************************************************************************
+2023-05-23 04:13:04,143 p=68083 u=isrealurephu n=ansible | 34.203.243.225             : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 04:16:35,616 p=68433 u=isrealurephu n=ansible | PLAY [install docker] ****************************************************************************************************************
+2023-05-23 04:16:35,621 p=68433 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 04:16:41,050 p=68433 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future
+installation of another Python interpreter could change the meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 04:16:41,050 p=68433 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:16:41,061 p=68433 u=isrealurephu n=ansible | TASK [installing docker and python3] *************************************************************************************************
+2023-05-23 04:16:45,140 p=68433 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:16:45,149 p=68433 u=isrealurephu n=ansible | TASK [start docker service] **********************************************************************************************************
+2023-05-23 04:16:49,126 p=68433 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:16:49,134 p=68433 u=isrealurephu n=ansible | TASK [install docker python module] **************************************************************************************************
+2023-05-23 04:16:55,487 p=68433 u=isrealurephu n=ansible | changed: [34.203.243.225]
+2023-05-23 04:16:55,495 p=68433 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] **********************************************************
+2023-05-23 04:16:58,315 p=68433 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in
+Ansible 2.14.
+
+2023-05-23 04:16:58,316 p=68433 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:16:58,324 p=68433 u=isrealurephu n=ansible | TASK [reconnect for server session] **************************************************************************************************
+2023-05-23 04:16:58,365 p=68433 u=isrealurephu n=ansible | PLAY [test docker with an image pull] ************************************************************************************************
+2023-05-23 04:16:58,369 p=68433 u=isrealurephu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************
+2023-05-23 04:17:03,812 p=68433 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 04:17:03,827 p=68433 u=isrealurephu n=ansible | TASK [pull and run an image] *********************************************************************************************************
+2023-05-23 04:17:06,725 p=68433 u=isrealurephu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ImportError: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with OpenSSL 1.0.2k-fips  26 Jan 2017. See: https://github.com/urllib3/urllib3/issues/2168
+2023-05-23 04:17:06,726 p=68433 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": false, "msg": "Failed to import the required Python library (requests) on ip-10-0-1-18.ec2.internal's Python /usr/bin/python3.7. Please read the module documentation and install it in the appropriate location. If the required library is installed, but Ansible is using the wrong Python interpreter, please consult the documentation on ansible_python_interpreter"}
+2023-05-23 04:17:06,727 p=68433 u=isrealurephu n=ansible | PLAY RECAP ***************************************************************************************************************************
+2023-05-23 04:17:06,727 p=68433 u=isrealurephu n=ansible | 34.203.243.225             : ok=6    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   

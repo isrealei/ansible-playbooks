@@ -20,13 +20,40 @@
       state: started
       enabled: yes
 
+  - name: install docker python module
+    pip:
+      name: docker
+
   - name: Add ec2-user group to docker group to be able to run docker commands
     ansible.builtin.user:
       name: ec2-user
       group: docker
       append: yes
-    
+
+  - name: reconnect for server session
+    ansible.builtin.meta: reset_connection
       
+
+- name: test docker with an image pull
+  hosts: docker_server
+  become_user: ec2-user
+  tasks:
+  - name: pull and run an image
+    ansible.builtin.docker_container:
+     name: my_nginx_container
+     image: nginx
+     ports:
+      - "80:80"
+     state: started
+    register: check_if_running
+   
+  
+  - ansible.builtin.debug: msg={{check_if_running}}
+
+
+
+      
+  
 
 - name: installing docker compose
   hosts: docker_server
@@ -37,7 +64,10 @@
      url: https://github.com/docker/compose/releases/download/1.23.2/docker-compose-linux-x86_64
      dest: /usr/local/bin/docker-compose
      mode: +x
+    
       
+
+    
     
     
     
