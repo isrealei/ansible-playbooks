@@ -3,7 +3,7 @@
   hosts: docker_server
   become: yes
   tasks:
-  - name: 
+  - name: installing docker and python3
     yum:
       name: "{{ packages }}"
       update_cache: yes
@@ -13,6 +13,35 @@
       - docker
       - python3
     register: docker_log
+
+  - name: start docker service
+    ansible.builtin.service:
+      name: docker 
+      state: started
+      enabled: yes
+
+  - name: Add ec2-user group to docker group to be able to run docker commands
+    ansible.builtin.user:
+      name: ec2-user
+      group: docker
+      append: yes
+    
+      
+
+- name: installing docker compose
+  hosts: docker_server
+  become: yes
+  tasks:
+  - name: downloading docker compose binaries
+    ansible.builtin.get_url:
+     url: https://github.com/docker/compose/releases/download/1.23.2/docker-compose-linux-x86_64
+     dest: /usr/local/bin/docker-compose
+     mode: +x
+      
+    
+    
+    
+
 
 
       

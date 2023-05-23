@@ -2091,3 +2091,236 @@ core/2.14/reference_appendices/interpreter_discovery.html for more information.
 }
 2023-05-22 02:33:26,041 p=87397 u=isrealurephu n=ansible | PLAY RECAP **********************************************************************************
 2023-05-22 02:33:26,041 p=87397 u=isrealurephu n=ansible | 34.207.72.52               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-23 02:24:45,865 p=58836 u=isrealurephu n=ansible | PLAY [install docker] *************************************************************************
+2023-05-23 02:24:45,871 p=58836 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************
+2023-05-23 02:24:51,774 p=58836 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at
+/usr/bin/python3.7, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 02:24:51,775 p=58836 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 02:24:51,788 p=58836 u=isrealurephu n=ansible | TASK [yum] ************************************************************************************
+2023-05-23 02:25:11,261 p=58836 u=isrealurephu n=ansible | changed: [34.203.243.225]
+2023-05-23 02:25:11,286 p=58836 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************
+2023-05-23 02:25:11,287 p=58836 u=isrealurephu n=ansible | 34.203.243.225             : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-23 02:28:18,083 p=59103 u=isrealurephu n=ansible | PLAY [install docker] *************************************************************************
+2023-05-23 02:28:18,088 p=59103 u=isrealurephu n=ansible | TASK [Gathering Facts] ************************************************************************
+2023-05-23 02:28:22,995 p=59103 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at
+/usr/bin/python3.7, but future installation of another Python interpreter could change the
+meaning of that path. See https://docs.ansible.com/ansible-
+core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 02:28:22,996 p=59103 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 02:28:23,007 p=59103 u=isrealurephu n=ansible | TASK [yum] ************************************************************************************
+2023-05-23 02:28:26,886 p=59103 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 02:28:26,904 p=59103 u=isrealurephu n=ansible | PLAY RECAP ************************************************************************************
+2023-05-23 02:28:26,904 p=59103 u=isrealurephu n=ansible | 34.203.243.225             : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-23 02:44:33,233 p=60371 u=isrealurephu n=ansible | {
+    "_meta": {
+        "hostvars": {
+            "134.122.96.41": {
+                "ansible_ssh_private_key_file": "/Users/isrealurephu/.ssh/id_rsa",
+                "ansible_user": "root"
+            },
+            "139.162.242.60": {
+                "ansible_ssh_private_key_file": "/Users/isrealurephu/.ssh/id_rsa",
+                "ansible_user": "root"
+            },
+            "209.38.196.182": {
+                "ansible_ssh_private_key_file": "/Users/isrealurephu/.ssh/id_rsa",
+                "ansible_user": "root"
+            },
+            "209.38.196.186": {
+                "ansible_ssh_private_key_file": "/Users/isrealurephu/.ssh/id_rsa",
+                "ansible_user": "root"
+            },
+            "3.84.10.202": {
+                "ansible_ssh_private_key_file": "/Users/isrealurephu/downloads/my-key.pem",
+                "ansible_user": "ubuntu"
+            },
+            "34.203.243.225": {
+                "ansible_ssh_private_key_file": "/Users/isrealurephu/downloads/my-key.pem",
+                "ansible_user": "ec2-user"
+            }
+        }
+    },
+    "all": {
+        "children": [
+            "ungrouped",
+            "droplet_websrvers",
+            "nexus_server",
+            "aws_instances",
+            "linodes",
+            "docker_server"
+        ]
+    },
+    "aws_instances": {
+        "hosts": [
+            "3.84.10.202"
+        ]
+    },
+    "docker_server": {
+        "hosts": [
+            "34.203.243.225"
+        ]
+    },
+    "droplet_websrvers": {
+        "hosts": [
+            "209.38.196.182",
+            "209.38.196.186"
+        ]
+    },
+    "linodes": {
+        "hosts": [
+            "139.162.242.60"
+        ]
+    },
+    "nexus_server": {
+        "hosts": [
+            "134.122.96.41"
+        ]
+    }
+}
+2023-05-23 02:59:52,392 p=61427 u=isrealurephu n=ansible | PLAY [install docker] *******************************************************************************************************************************************************
+2023-05-23 02:59:52,399 p=61427 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 02:59:57,367 p=61427 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 02:59:57,367 p=61427 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 02:59:57,379 p=61427 u=isrealurephu n=ansible | TASK [installing docker and python3] ****************************************************************************************************************************************
+2023-05-23 03:00:01,346 p=61427 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:00:01,364 p=61427 u=isrealurephu n=ansible | PLAY [installing docker compose] ********************************************************************************************************************************************
+2023-05-23 03:00:01,368 p=61427 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:00:05,710 p=61427 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:00:05,721 p=61427 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] **********************************************************************************************************************************
+2023-05-23 03:00:05,735 p=61427 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"msg": "template error while templating string: expected token ',', got 'uname'. String: sudo curl -L \"https://github.com/docker/compose/releases/download/1.23.2/docker-compose-linux-{{lookup('pipe, 'uname -m'')}}. expected token ',', got 'uname'"}
+2023-05-23 03:00:05,735 p=61427 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2023-05-23 03:00:05,735 p=61427 u=isrealurephu n=ansible | 34.203.243.225             : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:05:20,295 p=61893 u=isrealurephu n=ansible | PLAY [install docker] *******************************************************************************************************************************************************
+2023-05-23 03:05:20,301 p=61893 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:05:25,630 p=61893 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:05:25,630 p=61893 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:05:25,642 p=61893 u=isrealurephu n=ansible | TASK [installing docker and python3] ****************************************************************************************************************************************
+2023-05-23 03:05:30,148 p=61893 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:05:30,165 p=61893 u=isrealurephu n=ansible | PLAY [installing docker compose] ********************************************************************************************************************************************
+2023-05-23 03:05:30,169 p=61893 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:05:36,007 p=61893 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:05:36,019 p=61893 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] **********************************************************************************************************************************
+2023-05-23 03:05:38,989 p=61893 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": false, "dest": "/usr/local/bin/docker-compose", "elapsed": 0, "msg": "Request failed: <urlopen error unknown url type: sudo curl -l \"https>", "url": "sudo curl -L \"https://github.com/docker/compose/releases/download/1.27.4/docker-compose-linux-arm64"}
+2023-05-23 03:05:38,991 p=61893 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2023-05-23 03:05:38,991 p=61893 u=isrealurephu n=ansible | 34.203.243.225             : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:09:05,871 p=62203 u=isrealurephu n=ansible | PLAY [install docker] *******************************************************************************************************************************************************
+2023-05-23 03:09:05,876 p=62203 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:09:10,745 p=62203 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:09:10,745 p=62203 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:09:10,756 p=62203 u=isrealurephu n=ansible | TASK [installing docker and python3] ****************************************************************************************************************************************
+2023-05-23 03:09:14,626 p=62203 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:09:14,643 p=62203 u=isrealurephu n=ansible | PLAY [installing docker compose] ********************************************************************************************************************************************
+2023-05-23 03:09:14,647 p=62203 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:09:17,651 p=62203 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:09:17,662 p=62203 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] **********************************************************************************************************************************
+2023-05-23 03:09:20,255 p=62203 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": false, "dest": "/usr/local/bin/docker-compose", "elapsed": 0, "msg": "Request failed: <urlopen error unknown url type: curl -l \"https>", "url": "curl -L \"https://github.com/docker/compose/releases/download/1.27.4/docker-compose-linux-arm64"}
+2023-05-23 03:09:20,256 p=62203 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2023-05-23 03:09:20,256 p=62203 u=isrealurephu n=ansible | 34.203.243.225             : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:12:17,027 p=62497 u=isrealurephu n=ansible | PLAY [install docker] *******************************************************************************************************************************************************
+2023-05-23 03:12:17,033 p=62497 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:12:22,017 p=62497 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:12:22,017 p=62497 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:12:22,029 p=62497 u=isrealurephu n=ansible | TASK [installing docker and python3] ****************************************************************************************************************************************
+2023-05-23 03:12:25,912 p=62497 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:12:25,929 p=62497 u=isrealurephu n=ansible | PLAY [installing docker compose] ********************************************************************************************************************************************
+2023-05-23 03:12:25,933 p=62497 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:12:29,103 p=62497 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:12:29,114 p=62497 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] **********************************************************************************************************************************
+2023-05-23 03:12:31,714 p=62497 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": false, "dest": "/usr/local/bin/docker-compose", "elapsed": 0, "msg": "Request failed: <urlopen error unknown url type: curl -l \"https>", "url": "curl -L \"https://github.com/docker/compose/releases/download/1.27.4/docker-compose-linux-x86_64"}
+2023-05-23 03:12:31,715 p=62497 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2023-05-23 03:12:31,715 p=62497 u=isrealurephu n=ansible | 34.203.243.225             : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:13:22,487 p=62648 u=isrealurephu n=ansible | PLAY [install docker] *******************************************************************************************************************************************************
+2023-05-23 03:13:22,493 p=62648 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:13:26,236 p=62648 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:13:26,236 p=62648 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:13:26,247 p=62648 u=isrealurephu n=ansible | TASK [installing docker and python3] ****************************************************************************************************************************************
+2023-05-23 03:13:30,119 p=62648 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:13:30,136 p=62648 u=isrealurephu n=ansible | PLAY [installing docker compose] ********************************************************************************************************************************************
+2023-05-23 03:13:30,140 p=62648 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:13:33,194 p=62648 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:13:33,205 p=62648 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] **********************************************************************************************************************************
+2023-05-23 03:13:35,770 p=62648 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": false, "dest": "/usr/local/bin/docker-compose", "elapsed": 0, "msg": "Request failed: <urlopen error unknown url type: curl -l \"https>", "url": "curl -L \"https://github.com/docker/compose/releases/download/1.23.2/docker-compose-linux-x86_64"}
+2023-05-23 03:13:35,771 p=62648 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2023-05-23 03:13:35,771 p=62648 u=isrealurephu n=ansible | 34.203.243.225             : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:17:13,888 p=63043 u=isrealurephu n=ansible | PLAY [install docker] *******************************************************************************************************************************************************
+2023-05-23 03:17:13,894 p=63043 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:17:18,820 p=63043 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:17:18,820 p=63043 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:17:18,832 p=63043 u=isrealurephu n=ansible | TASK [installing docker and python3] ****************************************************************************************************************************************
+2023-05-23 03:17:22,692 p=63043 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:17:22,707 p=63043 u=isrealurephu n=ansible | PLAY [installing docker compose] ********************************************************************************************************************************************
+2023-05-23 03:17:22,712 p=63043 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:17:25,867 p=63043 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:17:25,878 p=63043 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] **********************************************************************************************************************************
+2023-05-23 03:17:28,481 p=63043 u=isrealurephu n=ansible | fatal: [34.203.243.225]: FAILED! => {"changed": false, "dest": "/usr/local/bin/docker-compose", "elapsed": 0, "msg": "Request failed: <urlopen error unknown url type: curl -l \"https>", "url": "curl -L \"https://github.com/docker/compose/releases/download/1.23.2/docker-compose-linux-x86_64\""}
+2023-05-23 03:17:28,482 p=63043 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2023-05-23 03:17:28,482 p=63043 u=isrealurephu n=ansible | 34.203.243.225             : ok=3    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:20:51,165 p=63349 u=isrealurephu n=ansible | PLAY [install docker] *******************************************************************************************************************************************************
+2023-05-23 03:20:51,171 p=63349 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:20:56,014 p=63349 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:20:56,015 p=63349 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:20:56,028 p=63349 u=isrealurephu n=ansible | TASK [installing docker and python3] ****************************************************************************************************************************************
+2023-05-23 03:20:59,833 p=63349 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:20:59,853 p=63349 u=isrealurephu n=ansible | PLAY [installing docker compose] ********************************************************************************************************************************************
+2023-05-23 03:20:59,858 p=63349 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:21:03,891 p=63349 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:21:03,906 p=63349 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] **********************************************************************************************************************************
+2023-05-23 03:21:06,854 p=63349 u=isrealurephu n=ansible | changed: [34.203.243.225]
+2023-05-23 03:21:06,876 p=63349 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2023-05-23 03:21:06,876 p=63349 u=isrealurephu n=ansible | 34.203.243.225             : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:23:55,475 p=63660 u=isrealurephu n=ansible | PLAY [install docker] *******************************************************************************************************************************************************
+2023-05-23 03:23:55,482 p=63660 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:24:00,426 p=63660 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:24:00,427 p=63660 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:24:00,439 p=63660 u=isrealurephu n=ansible | TASK [installing docker and python3] ****************************************************************************************************************************************
+2023-05-23 03:24:04,998 p=63660 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:24:05,005 p=63660 u=isrealurephu n=ansible | TASK [start docker service] *************************************************************************************************************************************************
+2023-05-23 03:24:08,621 p=63660 u=isrealurephu n=ansible | changed: [34.203.243.225]
+2023-05-23 03:24:08,638 p=63660 u=isrealurephu n=ansible | PLAY [installing docker compose] ********************************************************************************************************************************************
+2023-05-23 03:24:08,643 p=63660 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:24:12,300 p=63660 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:24:12,310 p=63660 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] **********************************************************************************************************************************
+2023-05-23 03:24:17,305 p=63660 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:24:17,323 p=63660 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2023-05-23 03:24:17,323 p=63660 u=isrealurephu n=ansible | 34.203.243.225             : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-05-23 03:30:13,831 p=64156 u=isrealurephu n=ansible | PLAY [install docker] *******************************************************************************************************************************************************
+2023-05-23 03:30:13,837 p=64156 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:30:19,330 p=64156 u=isrealurephu n=ansible | [WARNING]: Platform linux on host 34.203.243.225 is using the discovered Python interpreter at /usr/bin/python3.7, but future installation of another Python interpreter
+could change the meaning of that path. See https://docs.ansible.com/ansible-core/2.14/reference_appendices/interpreter_discovery.html for more information.
+
+2023-05-23 03:30:19,331 p=64156 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:30:19,342 p=64156 u=isrealurephu n=ansible | TASK [installing docker and python3] ****************************************************************************************************************************************
+2023-05-23 03:30:23,382 p=64156 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:30:23,389 p=64156 u=isrealurephu n=ansible | TASK [start docker service] *************************************************************************************************************************************************
+2023-05-23 03:30:26,439 p=64156 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:30:26,446 p=64156 u=isrealurephu n=ansible | TASK [Add ec2-user group to docker group to be able to run docker commands] *************************************************************************************************
+2023-05-23 03:30:29,208 p=64156 u=isrealurephu n=ansible | [WARNING]: 'append' is set, but no 'groups' are specified. Use 'groups' for appending new groups.This will change to an error in Ansible 2.14.
+
+2023-05-23 03:30:29,208 p=64156 u=isrealurephu n=ansible | changed: [34.203.243.225]
+2023-05-23 03:30:29,225 p=64156 u=isrealurephu n=ansible | PLAY [installing docker compose] ********************************************************************************************************************************************
+2023-05-23 03:30:29,230 p=64156 u=isrealurephu n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2023-05-23 03:30:32,543 p=64156 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:30:32,554 p=64156 u=isrealurephu n=ansible | TASK [downloading docker compose binaries] **********************************************************************************************************************************
+2023-05-23 03:30:36,086 p=64156 u=isrealurephu n=ansible | ok: [34.203.243.225]
+2023-05-23 03:30:36,104 p=64156 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2023-05-23 03:30:36,104 p=64156 u=isrealurephu n=ansible | 34.203.243.225             : ok=6    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
