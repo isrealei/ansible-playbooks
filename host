@@ -1,21 +1,20 @@
 [droplet_websrvers]
-209.38.196.182 
-209.38.196.186 
+
 
 [nexus_server]
-134.122.96.41
+
 
 [aws_instances]
-3.84.10.202  
+ 
 
 [linodes]
-139.162.242.60 
+
 
 [docker_server]
-34.203.243.225
+18.205.150.28
 
 [docker_server:vars]
-ansible_ssh_private_key_file=/Users/isrealurephu/downloads/my-key.pem
+ansible_ssh_private_key_file=/Users/isrealurephu/downloads/my-key-1.pem
 ansible_user=ec2-user
 
 
@@ -28,7 +27,7 @@ ansible_ssh_private_key_file=/Users/isrealurephu/.ssh/id_rsa
 ansible_user=root
 
 [aws_instances:vars]
-ansible_ssh_private_key_file=/Users/isrealurephu/downloads/my-key.pem
+ansible_ssh_private_key_file=/Users/isrealurephu/downloads/my-key-1.pem
 ansible_user=ubuntu
 
 [linodes:vars]
