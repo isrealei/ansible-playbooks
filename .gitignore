@@ -2,3 +2,5 @@ droplet
 droplet.pub
 terraform.tfstate
 terraform.tfvars
+terraform.tfstate.backup
+host

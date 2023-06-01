@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
 variable "subnet_cidr_block" {}
@@ -7,15 +7,18 @@ variable "vpc_cidr_block" {}
 variable "avail_zone" {}
 variable "env_prefix" {}
 variable "my_IP" {}
-# variable "PUBKEY_PATH" {}
 variable "PRIVKEY_PATH" {}
-variable "instance_type" {}
+variable "instance_type_1" {}
+variable "instance_type_2" {}
+variable "instance_type_3" {}
+variable "ssh_key_private" {}
 
 
 # vpc  creation
 
 resource "aws_vpc" "development-vpc" {
   cidr_block = var.vpc_cidr_block
+  enable_dns_hostnames = true
   tags = {
     Name = "${var.env_prefix}-vpc"
   }
@@ -104,11 +107,6 @@ resource "aws_security_group" "my-app-sg" {
   }
 }
 
-# key-pair
-# resource "aws_key_pair" "my-key" {
-#   key_name   = "my-app-key"
-#   public_key = file(var.PUBKEY_PATH)
-# }
 
 # instance creation
 
@@ -127,15 +125,11 @@ data "aws_ami" "latest-amazon-linux-image" {
 
 }
 
-output "aws_ami_id" {
-  value = data.aws_ami.latest-amazon-linux-image.id
 
-}
-
-resource "aws_instance" "my-app-webserver" {
+resource "aws_instance" "my-app-webserver-1" {
   ami           = data.aws_ami.latest-amazon-linux-image.id
-  instance_type = var.instance_type
-  key_name      = "my-key"
+  instance_type = var.instance_type_1
+  key_name      = "my-key-1"
 
   subnet_id              = aws_subnet.dev-sub-1.id
   vpc_security_group_ids = [aws_security_group.my-app-sg.id]
@@ -145,11 +139,60 @@ resource "aws_instance" "my-app-webserver" {
 
 
   tags = {
-    Name = "web-server-app"
+    Name = "web-server-app1"
+
   }
+}
+
+resource "aws_instance" "my-app-webserver-2" {
+  ami           = data.aws_ami.latest-amazon-linux-image.id
+  instance_type = var.instance_type_2
+  key_name      = "my-key-1"
+
+  subnet_id              = aws_subnet.dev-sub-1.id
+  vpc_security_group_ids = [aws_security_group.my-app-sg.id]
+  availability_zone      = var.avail_zone
+
+  associate_public_ip_address = true
+
+
+  tags = {
+    Name = "web-server-app2"
+  }
+
 
 }
 
-output "server-ip" {
-  value = aws_instance.my-app-webserver.public_ip
+resource "aws_instance" "my-app-webserver-3" {
+  ami           = data.aws_ami.latest-amazon-linux-image.id
+  instance_type = var.instance_type_3
+  key_name      = "my-key-1"
+
+  subnet_id              = aws_subnet.dev-sub-1.id
+  vpc_security_group_ids = [aws_security_group.my-app-sg.id]
+  availability_zone      = var.avail_zone
+
+  associate_public_ip_address = true
+
+
+  tags = {
+    Name = "web-server-app3"
+  }
+
+
+}
+
+output "server-ip_1" {
+  value = aws_instance.my-app-webserver-1.public_ip
+}
+output "server-ip_2" {
+  value = aws_instance.my-app-webserver-2.public_ip
+}
+output "server-ip_3" {
+  value = aws_instance.my-app-webserver-3.public_ip
+}
+
+output "aws_ami_id" {
+  value = data.aws_ami.latest-amazon-linux-image.id
+
 }
