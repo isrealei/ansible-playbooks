@@ -5832,3 +5832,208 @@ error in Ansible 2.14.
 2023-05-31 14:27:38,689 p=9667 u=isrealurephu n=ansible | ec2-18-116-118-162.us-east-2.compute.amazonaws.com : ok=6    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2023-05-31 14:27:38,689 p=9667 u=isrealurephu n=ansible | ec2-18-117-76-97.us-east-2.compute.amazonaws.com : ok=6    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2023-05-31 14:27:38,689 p=9667 u=isrealurephu n=ansible | ec2-18-118-189-137.us-east-2.compute.amazonaws.com : ok=6    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-06-01 21:03:06,007 p=4608 u=isrealurephu n=ansible | ERROR! the playbook: . does not appear to be a file
+2023-06-01 21:03:24,368 p=4648 u=isrealurephu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: aws_ec2
+
+2023-06-01 21:03:24,368 p=4648 u=isrealurephu n=ansible | PLAY [install docker and docker-compose] ************************************************************************************
+2023-06-01 21:03:24,368 p=4648 u=isrealurephu n=ansible | skipping: no hosts matched
+2023-06-01 21:03:24,368 p=4648 u=isrealurephu n=ansible | PLAY RECAP ******************************************************************************************************************
+2023-06-03 17:40:47,345 p=12336 u=isrealurephu n=ansible | [WARNING]: Unable to parse /Users/isrealurephu/bootcamp-projects/ansible/droplet_webservers as an inventory source
+
+2023-06-03 17:40:47,345 p=12336 u=isrealurephu n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-06-03 17:40:47,347 p=12336 u=isrealurephu n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-06-03 17:40:47,347 p=12336 u=isrealurephu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: ping
+
+2023-06-03 17:40:47,349 p=12336 u=isrealurephu n=ansible | ERROR! No argument passed to command module
+2023-06-03 17:41:47,656 p=12465 u=isrealurephu n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: droplet_webservers
+
+2023-06-03 17:41:47,656 p=12465 u=isrealurephu n=ansible | [WARNING]: No hosts matched, nothing to do
+
+2023-06-03 17:42:18,678 p=12514 u=isrealurephu n=ansible | 165.227.232.216 | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+2023-06-03 17:42:55,051 p=12611 u=isrealurephu n=ansible | PLAY [Configure Nginx Web Server] *********************************************************************************************************
+2023-06-03 17:42:55,057 p=12611 u=isrealurephu n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-06-03 17:42:57,173 p=12611 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 17:42:57,186 p=12611 u=isrealurephu n=ansible | TASK [install nginx server] ***************************************************************************************************************
+2023-06-03 17:42:58,475 p=12611 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 17:42:58,485 p=12611 u=isrealurephu n=ansible | TASK [start the nginx service] ************************************************************************************************************
+2023-06-03 17:42:59,696 p=12611 u=isrealurephu n=ansible | fatal: [165.227.232.216]: FAILED! => {"changed": false, "msg": "Could not find the requested service nginx: host"}
+2023-06-03 17:42:59,697 p=12611 u=isrealurephu n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-06-03 17:42:59,697 p=12611 u=isrealurephu n=ansible | 165.227.232.216            : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-06-03 17:43:37,661 p=12738 u=isrealurephu n=ansible | PLAY [Configure Nginx Web Server] *********************************************************************************************************
+2023-06-03 17:43:37,667 p=12738 u=isrealurephu n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-06-03 17:43:39,572 p=12738 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 17:43:39,583 p=12738 u=isrealurephu n=ansible | TASK [install nginx server] ***************************************************************************************************************
+2023-06-03 17:43:55,841 p=12738 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 17:43:55,849 p=12738 u=isrealurephu n=ansible | TASK [start the nginx service] ************************************************************************************************************
+2023-06-03 17:43:57,040 p=12738 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 17:43:57,047 p=12738 u=isrealurephu n=ansible | TASK [enable webserver] *******************************************************************************************************************
+2023-06-03 17:43:58,137 p=12738 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 17:43:58,155 p=12738 u=isrealurephu n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-06-03 17:43:58,155 p=12738 u=isrealurephu n=ansible | 165.227.232.216            : ok=4    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-06-03 18:03:00,394 p=14000 u=isrealurephu n=ansible | PLAY [Configure Nginx Web Server] *********************************************************************************************************
+2023-06-03 18:03:00,400 p=14000 u=isrealurephu n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-06-03 18:03:03,394 p=14000 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:03:03,406 p=14000 u=isrealurephu n=ansible | TASK [install nginx server] ***************************************************************************************************************
+2023-06-03 18:03:05,353 p=14000 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:03:05,362 p=14000 u=isrealurephu n=ansible | TASK [start the nginx service] ************************************************************************************************************
+2023-06-03 18:03:06,713 p=14000 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:03:06,720 p=14000 u=isrealurephu n=ansible | TASK [enable webserver] *******************************************************************************************************************
+2023-06-03 18:03:07,846 p=14000 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:03:07,864 p=14000 u=isrealurephu n=ansible | PLAY [Configure and install jenkins] ******************************************************************************************************
+2023-06-03 18:03:07,869 p=14000 u=isrealurephu n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-06-03 18:03:09,700 p=14000 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:03:09,714 p=14000 u=isrealurephu n=ansible | TASK [add jenkins repository key] *********************************************************************************************************
+2023-06-03 18:03:11,272 p=14000 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:03:11,280 p=14000 u=isrealurephu n=ansible | TASK [add jenkins repository] *************************************************************************************************************
+2023-06-03 18:03:24,892 p=14000 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:03:24,900 p=14000 u=isrealurephu n=ansible | TASK [update cache] ***********************************************************************************************************************
+2023-06-03 18:03:33,132 p=14000 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:03:33,141 p=14000 u=isrealurephu n=ansible | TASK [install java] ***********************************************************************************************************************
+2023-06-03 18:03:51,933 p=14000 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:03:51,943 p=14000 u=isrealurephu n=ansible | TASK [install jenkins] ********************************************************************************************************************
+2023-06-03 18:04:50,882 p=14000 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:04:50,893 p=14000 u=isrealurephu n=ansible | TASK [Start jenkins server] ***************************************************************************************************************
+2023-06-03 18:04:52,010 p=14000 u=isrealurephu n=ansible | fatal: [165.227.232.216]: FAILED! => {"changed": false, "msg": "value of state must be one of: reloaded, restarted, started, stopped, got: enabled"}
+2023-06-03 18:04:52,011 p=14000 u=isrealurephu n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-06-03 18:04:52,011 p=14000 u=isrealurephu n=ansible | 165.227.232.216            : ok=10   changed=5    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-06-03 18:05:19,876 p=14280 u=isrealurephu n=ansible | PLAY [Configure Nginx Web Server] *********************************************************************************************************
+2023-06-03 18:05:19,882 p=14280 u=isrealurephu n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-06-03 18:05:21,922 p=14280 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:05:21,934 p=14280 u=isrealurephu n=ansible | TASK [install nginx server] ***************************************************************************************************************
+2023-06-03 18:05:23,506 p=14280 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:05:23,512 p=14280 u=isrealurephu n=ansible | TASK [start the nginx service] ************************************************************************************************************
+2023-06-03 18:05:24,768 p=14280 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:05:24,775 p=14280 u=isrealurephu n=ansible | TASK [enable webserver] *******************************************************************************************************************
+2023-06-03 18:05:26,003 p=14280 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:05:26,027 p=14280 u=isrealurephu n=ansible | PLAY [Configure and install jenkins] ******************************************************************************************************
+2023-06-03 18:05:26,033 p=14280 u=isrealurephu n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-06-03 18:05:28,041 p=14280 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:05:28,053 p=14280 u=isrealurephu n=ansible | TASK [add jenkins repository key] *********************************************************************************************************
+2023-06-03 18:05:29,353 p=14280 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:05:29,358 p=14280 u=isrealurephu n=ansible | TASK [add jenkins repository] *************************************************************************************************************
+2023-06-03 18:05:30,479 p=14280 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:05:30,486 p=14280 u=isrealurephu n=ansible | TASK [update cache] ***********************************************************************************************************************
+2023-06-03 18:05:32,647 p=14280 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:05:32,654 p=14280 u=isrealurephu n=ansible | TASK [install java] ***********************************************************************************************************************
+2023-06-03 18:05:34,991 p=14280 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:05:34,999 p=14280 u=isrealurephu n=ansible | TASK [install jenkins] ********************************************************************************************************************
+2023-06-03 18:05:36,531 p=14280 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:05:36,535 p=14280 u=isrealurephu n=ansible | TASK [Start jenkins server] ***************************************************************************************************************
+2023-06-03 18:05:37,650 p=14280 u=isrealurephu n=ansible | fatal: [165.227.232.216]: FAILED! => {"changed": false, "msg": "value of state must be one of: reloaded, restarted, started, stopped, got: start"}
+2023-06-03 18:05:37,652 p=14280 u=isrealurephu n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-06-03 18:05:37,652 p=14280 u=isrealurephu n=ansible | 165.227.232.216            : ok=10   changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-06-03 18:07:13,841 p=14512 u=isrealurephu n=ansible | PLAY [Configure Nginx Web Server] *********************************************************************************************************
+2023-06-03 18:07:13,847 p=14512 u=isrealurephu n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-06-03 18:07:16,706 p=14512 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:07:16,718 p=14512 u=isrealurephu n=ansible | TASK [install nginx server] ***************************************************************************************************************
+2023-06-03 18:07:18,318 p=14512 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:07:18,327 p=14512 u=isrealurephu n=ansible | TASK [start the nginx service] ************************************************************************************************************
+2023-06-03 18:07:19,536 p=14512 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:07:19,542 p=14512 u=isrealurephu n=ansible | TASK [enable webserver] *******************************************************************************************************************
+2023-06-03 18:07:20,775 p=14512 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:07:20,797 p=14512 u=isrealurephu n=ansible | PLAY [Configure and install jenkins] ******************************************************************************************************
+2023-06-03 18:07:20,803 p=14512 u=isrealurephu n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-06-03 18:07:22,543 p=14512 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:07:22,555 p=14512 u=isrealurephu n=ansible | TASK [add jenkins repository key] *********************************************************************************************************
+2023-06-03 18:07:23,868 p=14512 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:07:23,876 p=14512 u=isrealurephu n=ansible | TASK [add jenkins repository] *************************************************************************************************************
+2023-06-03 18:07:25,305 p=14512 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:07:25,315 p=14512 u=isrealurephu n=ansible | TASK [update cache] ***********************************************************************************************************************
+2023-06-03 18:07:27,656 p=14512 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:07:27,666 p=14512 u=isrealurephu n=ansible | TASK [install java] ***********************************************************************************************************************
+2023-06-03 18:07:31,042 p=14512 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:07:31,052 p=14512 u=isrealurephu n=ansible | TASK [install jenkins] ********************************************************************************************************************
+2023-06-03 18:07:32,610 p=14512 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:07:32,620 p=14512 u=isrealurephu n=ansible | TASK [Start jenkins server] ***************************************************************************************************************
+2023-06-03 18:07:33,891 p=14512 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:07:33,917 p=14512 u=isrealurephu n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-06-03 18:07:33,917 p=14512 u=isrealurephu n=ansible | 165.227.232.216            : ok=11   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-06-03 18:08:01,991 p=14685 u=isrealurephu n=ansible | PLAY [Configure Nginx Web Server] *********************************************************************************************************
+2023-06-03 18:08:01,997 p=14685 u=isrealurephu n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-06-03 18:08:04,436 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:04,448 p=14685 u=isrealurephu n=ansible | TASK [install nginx server] ***************************************************************************************************************
+2023-06-03 18:08:06,252 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:06,262 p=14685 u=isrealurephu n=ansible | TASK [start the nginx service] ************************************************************************************************************
+2023-06-03 18:08:07,599 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:07,607 p=14685 u=isrealurephu n=ansible | TASK [enable webserver] *******************************************************************************************************************
+2023-06-03 18:08:08,801 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:08,824 p=14685 u=isrealurephu n=ansible | PLAY [Configure and install jenkins] ******************************************************************************************************
+2023-06-03 18:08:08,829 p=14685 u=isrealurephu n=ansible | TASK [Gathering Facts] ********************************************************************************************************************
+2023-06-03 18:08:10,520 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:10,532 p=14685 u=isrealurephu n=ansible | TASK [add jenkins repository key] *********************************************************************************************************
+2023-06-03 18:08:11,962 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:11,969 p=14685 u=isrealurephu n=ansible | TASK [add jenkins repository] *************************************************************************************************************
+2023-06-03 18:08:13,870 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:13,879 p=14685 u=isrealurephu n=ansible | TASK [update cache] ***********************************************************************************************************************
+2023-06-03 18:08:15,262 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:15,271 p=14685 u=isrealurephu n=ansible | TASK [install java] ***********************************************************************************************************************
+2023-06-03 18:08:17,559 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:17,568 p=14685 u=isrealurephu n=ansible | TASK [install jenkins] ********************************************************************************************************************
+2023-06-03 18:08:19,246 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:19,255 p=14685 u=isrealurephu n=ansible | TASK [Start jenkins server] ***************************************************************************************************************
+2023-06-03 18:08:20,419 p=14685 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:08:20,438 p=14685 u=isrealurephu n=ansible | PLAY RECAP ********************************************************************************************************************************
+2023-06-03 18:08:20,438 p=14685 u=isrealurephu n=ansible | 165.227.232.216            : ok=11   changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-06-03 18:47:05,020 p=16548 u=isrealurephu n=ansible | ERROR! the playbook: sonaqube-install.yaml could not be found
+2023-06-03 18:47:17,766 p=16581 u=isrealurephu n=ansible | PLAY [Install SonarQube Server] *******************************************************************************
+2023-06-03 18:47:17,772 p=16581 u=isrealurephu n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-06-03 18:47:20,745 p=16581 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:47:20,759 p=16581 u=isrealurephu n=ansible | TASK [Backup sysctl.conf] *************************************************************************************
+2023-06-03 18:47:20,925 p=16581 u=isrealurephu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-06-03 18:47:20,926 p=16581 u=isrealurephu n=ansible | fatal: [165.227.232.216]: FAILED! => {"changed": false, "msg": "Could not find or access '/etc/sysctl.conf' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-06-03 18:47:20,926 p=16581 u=isrealurephu n=ansible | PLAY RECAP ****************************************************************************************************
+2023-06-03 18:47:20,927 p=16581 u=isrealurephu n=ansible | 165.227.232.216            : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-06-03 18:48:33,461 p=16693 u=isrealurephu n=ansible | PLAY [Install SonarQube Server] *******************************************************************************
+2023-06-03 18:48:33,467 p=16693 u=isrealurephu n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-06-03 18:48:36,318 p=16693 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:48:36,333 p=16693 u=isrealurephu n=ansible | TASK [Backup sysctl.conf] *************************************************************************************
+2023-06-03 18:48:37,202 p=16693 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:48:37,211 p=16693 u=isrealurephu n=ansible | TASK [Configure sysctl.conf] **********************************************************************************
+2023-06-03 18:48:39,023 p=16693 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:48:39,030 p=16693 u=isrealurephu n=ansible | TASK [Backup limits.conf] *************************************************************************************
+2023-06-03 18:48:39,215 p=16693 u=isrealurephu n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: If you are using a module and expect the file to exist on the remote, see the remote_src option
+2023-06-03 18:48:39,215 p=16693 u=isrealurephu n=ansible | fatal: [165.227.232.216]: FAILED! => {"changed": false, "msg": "Could not find or access '/etc/security/limits.conf' on the Ansible Controller.\nIf you are using a module and expect the file to exist on the remote, see the remote_src option"}
+2023-06-03 18:48:39,216 p=16693 u=isrealurephu n=ansible | PLAY RECAP ****************************************************************************************************
+2023-06-03 18:48:39,216 p=16693 u=isrealurephu n=ansible | 165.227.232.216            : ok=3    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-06-03 18:49:01,395 p=16781 u=isrealurephu n=ansible | PLAY [Install SonarQube Server] *******************************************************************************
+2023-06-03 18:49:01,401 p=16781 u=isrealurephu n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-06-03 18:49:03,484 p=16781 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:49:03,494 p=16781 u=isrealurephu n=ansible | TASK [Backup sysctl.conf] *************************************************************************************
+2023-06-03 18:49:04,325 p=16781 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:49:04,333 p=16781 u=isrealurephu n=ansible | TASK [Configure sysctl.conf] **********************************************************************************
+2023-06-03 18:49:05,906 p=16781 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:49:05,913 p=16781 u=isrealurephu n=ansible | TASK [Backup limits.conf] *************************************************************************************
+2023-06-03 18:49:06,725 p=16781 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:49:06,730 p=16781 u=isrealurephu n=ansible | TASK [Configure limits.conf] **********************************************************************************
+2023-06-03 18:49:08,404 p=16781 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:49:08,413 p=16781 u=isrealurephu n=ansible | TASK [Update apt cache] ***************************************************************************************
+2023-06-03 18:49:13,576 p=16781 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:49:13,585 p=16781 u=isrealurephu n=ansible | TASK [Install OpenJDK 11] *************************************************************************************
+2023-06-03 18:49:22,280 p=16781 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:49:22,288 p=16781 u=isrealurephu n=ansible | TASK [Set Java alternatives] **********************************************************************************
+2023-06-03 18:59:27,307 p=16781 u=isrealurephu n=ansible |  [ERROR]: User interrupted execution
+
+2023-06-03 18:59:30,738 p=17507 u=isrealurephu n=ansible | PLAY [Install SonarQube Server] *******************************************************************************
+2023-06-03 18:59:30,743 p=17507 u=isrealurephu n=ansible | TASK [Gathering Facts] ****************************************************************************************
+2023-06-03 18:59:33,493 p=17507 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:59:33,507 p=17507 u=isrealurephu n=ansible | TASK [Backup sysctl.conf] *************************************************************************************
+2023-06-03 18:59:34,870 p=17507 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:59:34,878 p=17507 u=isrealurephu n=ansible | TASK [Configure sysctl.conf] **********************************************************************************
+2023-06-03 18:59:37,554 p=17507 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:59:37,563 p=17507 u=isrealurephu n=ansible | TASK [Backup limits.conf] *************************************************************************************
+2023-06-03 18:59:38,876 p=17507 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:59:38,883 p=17507 u=isrealurephu n=ansible | TASK [Configure limits.conf] **********************************************************************************
+2023-06-03 18:59:40,534 p=17507 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:59:40,542 p=17507 u=isrealurephu n=ansible | TASK [Update apt cache] ***************************************************************************************
+2023-06-03 18:59:48,963 p=17507 u=isrealurephu n=ansible | changed: [165.227.232.216]
+2023-06-03 18:59:48,971 p=17507 u=isrealurephu n=ansible | TASK [Install OpenJDK 11] *************************************************************************************
+2023-06-03 18:59:50,492 p=17507 u=isrealurephu n=ansible | ok: [165.227.232.216]
+2023-06-03 18:59:50,502 p=17507 u=isrealurephu n=ansible | TASK [Set Java alternatives] **********************************************************************************

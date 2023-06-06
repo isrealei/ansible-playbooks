@@ -6,14 +6,52 @@
   - name: install nginx server
     apt:
       name: nginx
-      state: absent
+      state: present
 
   - name: start the nginx service
     service: 
       name: nginx 
-      state: stopped 
+      state: started
 
   - name: enable webserver
     service: 
       name: nginx
       enabled: yes
+
+
+- name: Configure and install jenkins
+  hosts: droplet_websrvers
+  tasks:
+  - name: add jenkins repository key
+    apt_key:
+     url: https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+     state: present
+
+  - name: add jenkins repository
+    apt_repository:
+      repo: deb https://pkg.jenkins.io/debian-stable binary/ 
+      state: present
+
+  - name: update cache
+    apt: 
+     update_cache: yes
+     cache_valid_time: 3600
+
+  - name: install java
+    apt: 
+     name: openjdk-11-jre
+     state: present
+     update_cache: yes
+    
+  - name: install jenkins
+    apt: 
+      name: jenkins
+      state: present
+
+  - name: Start jenkins server
+    service:
+      name: jenkins
+      state: started
+      enabled: yes
+
+    

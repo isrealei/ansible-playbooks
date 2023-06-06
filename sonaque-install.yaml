@@ -1,0 +1,225 @@
+---
+- name: Install SonarQube Server
+  hosts: droplet_websrvers
+  become: true
+
+  tasks:
+    - name: Backup sysctl.conf
+      copy:
+        src: /etc/sysctl.conf
+        dest: /root/sysctl.conf_backup
+        remote_src: yes
+
+    - name: Configure sysctl.conf
+      copy:
+        content: |
+          vm.max_map_count=262144
+          fs.file-max=65536
+          ulimit -n 65536
+          ulimit -u 4096
+        dest: /etc/sysctl.conf
+
+    - name: Backup limits.conf
+      copy:
+        src: /etc/security/limits.conf
+        dest: /root/sec_limit.conf_backup
+        remote_src: yes
+
+    - name: Configure limits.conf
+      copy:
+        content: |
+          sonarqube   -   nofile   65536
+          sonarqube   -   nproc    409
+        dest: /etc/security/limits.conf
+
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install OpenJDK 11
+      apt:
+        name: openjdk-11-jdk
+        state: present
+
+    - name: Set Java alternatives
+      command: update-alternatives --config java
+      become_user: root
+
+    - name: Display Java version
+      command: java -version
+
+    - name: Install PostgreSQL repository key
+      apt_key:
+        url: https://www.postgresql.org/media/keys/ACCC4CF8.asc
+        state: present
+
+    - name: Add PostgreSQL repository
+      apt_repository:
+        repo: deb http://apt.postgresql.org/pub/repos/apt/ {{ ansible_lsb.codename }}-pgdg main
+        state: present
+
+    - name: Install PostgreSQL
+      apt:
+        name: postgresql postgresql-contrib
+        state: present
+
+    - name: Enable and start PostgreSQL service
+      systemd:
+        name: postgresql.service
+        state: started
+        enabled: yes
+
+    - name: Set PostgreSQL password for 'postgres' user
+      command: echo "postgres:admin123" | chpasswd
+      become_user: root
+
+    - name: Create SonarQube database and user in PostgreSQL
+      command: sudo -u postgres psql -c "CREATE USER sonar WITH ENCRYPTED PASSWORD 'admin123';"
+      become_user: root
+
+    - name: Grant privileges on SonarQube database to SonarQube user
+      command: sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE sonarqube TO sonar;"
+      become_user: root
+
+    - name: Restart PostgreSQL service
+      systemd:
+        name: postgresql.service
+        state: restarted
+
+    - name: Create SonarQube directory
+      file:
+        path: /sonarqube
+        state: directory
+        mode: '0755'
+
+    - name: Download SonarQube
+      get_url:
+        url: https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.3.0.34182.zip
+        dest: /sonarqube/sonarqube-8.3.0.34182.zip
+
+    - name: Install unzip
+      apt:
+        name: unzip
+        state: present
+
+    - name: Unzip SonarQube
+      unarchive:
+        src: /sonarqube/sonarqube-8.3.0.34182.zip
+        dest: /opt/
+        remote_src: yes
+        owner: sonar
+        group: sonar
+
+    - name: Create SonarQube configuration file
+      copy:
+        content: |
+          sonar.jdbc.username=sonar
+          sonar.jdbc.password=admin123
+          sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube
+          sonar.web.host=0.0.0.0
+          sonar.web.port=9000
+          sonar.web.javaAdditionalOpts=-server
+          sonar.search.javaOpts=-Xmx512m -Xms512m -XX:+HeapDumpOnOutOfMemoryError
+          sonar.log.level=INFO
+          sonar.path.logs=logs
+        dest: /opt/sonarqube/conf/sonar.properties
+        owner: sonar
+        group: sonar
+
+    - name: Create SonarQube systemd service
+      copy:
+        content: |
+          [Unit]
+          Description=SonarQube service
+          After=syslog.target network.target
+
+          [Service]
+          Type=forking
+          ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start
+          ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+          User=sonar
+          Group=sonar
+          Restart=always
+          LimitNOFILE=65536
+          LimitNPROC=4096
+
+          [Install]
+          WantedBy=multi-user.target
+        dest: /etc/systemd/system/sonarqube.service
+
+    - name: Reload systemd
+      systemd:
+        daemon_reload: yes
+
+    - name: Enable SonarQube service
+      systemd:
+        name: sonarqube.service
+        state: started
+        enabled: yes
+
+    - name: Install NGINX
+      apt:
+        name: nginx
+        state: present
+
+    - name: Remove default NGINX configuration
+      file:
+        path: /etc/nginx/sites-enabled/default
+        state: absent
+
+    - name: Remove default NGINX sites-available configuration
+      file:
+        path: /etc/nginx/sites-available/default
+        state: absent
+
+    - name: Create SonarQube NGINX configuration
+      copy:
+        content: |
+          server {
+            listen      80;
+            server_name sonarqube.groophy.in;
+
+            access_log  /var/log/nginx/sonar.access.log;
+            error_log   /var/log/nginx/sonar.error.log;
+
+            proxy_buffers 16 64k;
+            proxy_buffer_size 128k;
+
+            location / {
+              proxy_pass  http://127.0.0.1:9000;
+              proxy_next_upstream error timeout invalid_header http_500 http_502 http_503 http_504;
+              proxy_redirect off;
+              proxy_set_header    Host            $host;
+              proxy_set_header    X-Real-IP       $remote_addr;
+              proxy_set_header    X-Forwarded-For $proxy_add_x_forwarded_for;
+              proxy_set_header    X-Forwarded-Proto http;
+            }
+          }
+        dest: /etc/nginx/sites-available/sonarqube
+
+    - name: Create symbolic link for SonarQube NGINX configuration
+      file:
+        src: /etc/nginx/sites-available/sonarqube
+        dest: /etc/nginx/sites-enabled/sonarqube
+        state: link
+
+    - name: Enable NGINX service
+      systemd:
+        name: nginx.service
+        state: started
+        enabled: yes
+
+    - name: Allow ports in UFW
+      ufw:
+        rule: allow
+        port: "{{ item }}"
+        state: enabled
+      loop:
+        - 80
+        - 9000
+        - 9001
+
+    - name: Reboot the system
+      command: sleep 30 && reboot
+      async: 0
+      poll: 0
