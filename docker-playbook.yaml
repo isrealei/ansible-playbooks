@@ -1,6 +1,6 @@
 ---
 - name: install docker and docker-compose
-  hosts: aws_ec2
+  hosts: server_Name_dev_server
   become: yes
   tasks:
   - name: installing docker, pip and python3

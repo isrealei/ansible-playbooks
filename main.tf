@@ -17,7 +17,7 @@ variable "ssh_key_private" {}
 # vpc  creation
 
 resource "aws_vpc" "development-vpc" {
-  cidr_block = var.vpc_cidr_block
+  cidr_block           = var.vpc_cidr_block
   enable_dns_hostnames = true
   tags = {
     Name = "${var.env_prefix}-vpc"
@@ -130,6 +130,7 @@ resource "aws_instance" "my-app-webserver-1" {
   ami           = data.aws_ami.latest-amazon-linux-image.id
   instance_type = var.instance_type_1
   key_name      = "my-key-1"
+  count = 2
 
   subnet_id              = aws_subnet.dev-sub-1.id
   vpc_security_group_ids = [aws_security_group.my-app-sg.id]
@@ -148,6 +149,7 @@ resource "aws_instance" "my-app-webserver-2" {
   ami           = data.aws_ami.latest-amazon-linux-image.id
   instance_type = var.instance_type_2
   key_name      = "my-key-1"
+  count = 2
 
   subnet_id              = aws_subnet.dev-sub-1.id
   vpc_security_group_ids = [aws_security_group.my-app-sg.id]
@@ -157,7 +159,7 @@ resource "aws_instance" "my-app-webserver-2" {
 
 
   tags = {
-    Name = "web-server-app2"
+    Name = "dev-server"
   }
 
 
@@ -167,6 +169,7 @@ resource "aws_instance" "my-app-webserver-3" {
   ami           = data.aws_ami.latest-amazon-linux-image.id
   instance_type = var.instance_type_3
   key_name      = "my-key-1"
+  count = 2
 
   subnet_id              = aws_subnet.dev-sub-1.id
   vpc_security_group_ids = [aws_security_group.my-app-sg.id]
@@ -176,20 +179,20 @@ resource "aws_instance" "my-app-webserver-3" {
 
 
   tags = {
-    Name = "web-server-app3"
+    Name = "prod-server"
   }
 
 
 }
 
 output "server-ip_1" {
-  value = aws_instance.my-app-webserver-1.public_ip
+  value = aws_instance.my-app-webserver-1[*].public_ip
 }
 output "server-ip_2" {
-  value = aws_instance.my-app-webserver-2.public_ip
+  value = aws_instance.my-app-webserver-2[*].public_ip
 }
 output "server-ip_3" {
-  value = aws_instance.my-app-webserver-3.public_ip
+  value = aws_instance.my-app-webserver-3[*].public_ip
 }
 
 output "aws_ami_id" {
