@@ -1,0 +1,22 @@
+---
+- name: Deploy applaication in a new namespace
+  hosts: localhost
+  become: yes
+  become_user: isrealurephu
+  remote_user: isrealurephu
+  tasks:
+  - name: create a k8s namespace
+    k8s: 
+     name: testing 
+     api_version: v1
+     kind: Namespace
+     state: present
+     
+  - name: deploy an nginx application
+    k8s:
+      state: absent
+      src: /Users/isrealurephu/bootcamp-projects/ansible/nginx.yaml
+      namespace: testing
+     
+        
+   

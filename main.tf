@@ -30,9 +30,22 @@ resource "aws_subnet" "dev-sub-1" {
   vpc_id            = aws_vpc.development-vpc.id
   cidr_block        = var.subnet_cidr_block
   availability_zone = var.avail_zone
+  map_public_ip_on_launch = true
 
   tags = {
     Name = "${var.env_prefix}-subnet-1"
+  }
+
+}
+
+resource "aws_subnet" "dev-sub-2" {
+  vpc_id            = aws_vpc.development-vpc.id
+  cidr_block        = "10.0.2.0/24"
+  availability_zone = "us-east-2b"
+  map_public_ip_on_launch = true
+
+  tags = {
+    Name = "${var.env_prefix}-subnet-2"
   }
 
 }
@@ -68,6 +81,12 @@ resource "aws_route_table_association" "sub-asso" {
   subnet_id      = aws_subnet.dev-sub-1.id
   route_table_id = aws_route_table.myapp-RT.id
 }
+
+resource "aws_route_table_association" "sub-asso1" {
+  subnet_id      = aws_subnet.dev-sub-2.id
+  route_table_id = aws_route_table.myapp-RT.id
+}
+
 
 # security group creation
 

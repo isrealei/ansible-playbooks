@@ -1,6 +1,6 @@
 ---
 - name: install docker and docker-compose
-  hosts: server_Name_dev_server
+  hosts: docker_server
   become: yes
   tasks:
   - name: installing docker, pip and python3
@@ -48,14 +48,14 @@
       
       
 
-# - name: test docker with an image pull
-#   hosts: all
-#   become_user: ec2-user
-#   tasks:
-#   - name: pull and run an image
-#     ansible.builtin.docker_image:
-#      name: redis
-#      source: pull
+- name: test docker with an image pull
+  hosts: docker_server
+  become_user: ec2-user
+  tasks:
+  - name: pull and run an image
+    ansible.builtin.docker_image:
+     name: redis
+     source: pull
      
 
 
